@@ -1,14 +1,7 @@
-from datetime import datetime
-
-__DEBUG = False
-
 def read_csv(file_path, 
         QI_INDEX,
-        IS_CAT,
-        IS_DATETIME,
         SA_INDEX, 
-        header=False, delimiter=',', encoding="utf-8",
-        TIME_FORMAT_STR="%Y-%m-%d %H:%M:%S"
+        header=False, delimiter=',', encoding="utf-8"
     ):
     """
     read microdata for *.txt and return read data

@@ -2,7 +2,7 @@ from numpy.lib.function_base import average
 import pandas as pd
 import time
 import csv
-
+import math
 # read data
 raw_data = []
 with open('test.csv')as f:
@@ -41,7 +41,7 @@ def age_Generalization(x, n):
     else:
         m = 5*(2**(n-1))
         tmp = (int)(eval(x) / m)
-        return str(tmp*m)+"-"+str(tmp*m+m)
+        return str(tmp*m)+"-"+str(tmp*m+m-1)
 
 
 '''
@@ -55,7 +55,7 @@ output: g (data after k-Anonymity),
 '''
 
 
-def satisfy(k, vec, MaxSup):
+def satisfy(k, vec, MaxSup, Utility_method):
     # t: data that before generalize
     t = raw_data
     # g: to store data that after generalize
@@ -98,23 +98,59 @@ def satisfy(k, vec, MaxSup):
                 x = str(i[0])+str(i[1])+str(i[2])+str(i[3])
                 if x == delete:
                     g.remove(i)
-    # calculate lm for marital_status_tree
-    sum = 0
-    if vec[3] == 1:
-        for i in g:
-            if i[3] != 'NM':
-                sum += 1/6
-    sum = sum/len(g)
-    # weight of different attribute
-    weight = [1, 1, 1, 1]
-    loss_gender = [0, 1]
-    loss_age = [0, 5/100, 10/100, 20/100, 1]
-    loss_race = [0, 1]
-    loss_marital_status_tree = [0, sum, 1]
-    # calculate lm for all attribute
-    LM = weight[0]*loss_age[vec[0]]+weight[1]*loss_gender[vec[1]] + \
-        weight[2]*loss_race[vec[2]]+weight[3] * \
-        loss_marital_status_tree[vec[3]]
+    if Utility_method == 'Loss_Metric':
+        # calculate lm for marital_status_tree
+        sum = 0
+        if vec[3] == 1:
+            for i in g:
+                if i[3] != 'NM':
+                    sum += 1/6
+        sum = sum/len(g)
+        # weight of different attribute
+        weight = [1, 1, 1, 1]
+        loss_gender = [0, 1]
+        loss_age = [0, 5/100, 10/100, 20/100, 1]
+        loss_race = [0, 1]
+        loss_marital_status_tree = [0, sum, 1]
+        # calculate lm for all attribute
+        LM = weight[0]*loss_age[vec[0]]+weight[1]*loss_gender[vec[1]] + \
+            weight[2]*loss_race[vec[2]]+weight[3] * \
+            loss_marital_status_tree[vec[3]]
+    elif Utility_method == 'Discernability_Metric':
+        LM = 0
+        for i in range(4):
+            d={}
+            for j in g:
+                tmp=j[i]
+                c=d.get(tmp)
+                if c == None:
+                    d[tmp] = 1
+                else:
+                    d[tmp] = c+1
+            tmp = list(d.keys())
+            for j in range(len(tmp)):
+                t = d.get(tmp[j])
+                if t >= k:
+                    LM += t**2
+    else:
+        LM = 0
+        l = len(g)
+        for i in range(4):
+            d={}
+            for j in g:
+                tmp=j[i]
+                c=d.get(tmp)
+                if c == None:
+                    d[tmp] = 1
+                else:
+                    d[tmp] = c+1
+            tmp = list(d.keys())
+            for j in range(len(tmp)):
+                t = d.get(tmp[j])
+                if t >= k:
+                    p = t/l
+                    LM += p*math.log(p)
+                
     return g, True, LM
 
 
@@ -146,7 +182,10 @@ low = 0
 high = 4+1+1+2
 sol = []
 start_time = time.time()
-Best_LM = 4
+# Loss_Metric,Discernability_Metric,entropy
+Utility_method = 'entropy'
+Best_LM = float('inf')
+Best_height = high
 while low < high:
     sol = []
     mid = int((low+high)/2)
@@ -154,12 +193,14 @@ while low < high:
     tmp = func_vec(mid, 4, 1, 1, 2)
     flag = False
     for i in range(len(tmp)):
-        sol, reach, LM = satisfy(k, tmp[i], MaxSup)
+        sol, reach, LM = satisfy(k, tmp[i], MaxSup, Utility_method)
         if reach == True:
             flag = True
-            print("\nLM:", LM)
-            print("Generalization vector:", tmp[i])
-            if LM < Best_LM:
+            #print("\nLM:", LM)
+            #print("Generalization vector:", tmp[i])
+            #if LM < Best_LM:
+            if mid < Best_height or (mid == Best_height and LM < Best_LM):
+                Best_height = mid
                 Best_LM = LM
                 ans = sol
                 ans = pd.DataFrame(
@@ -173,3 +214,4 @@ while low < high:
 end_time = time.time()
 print("\nLM=%0.2f" % Best_LM)
 print("Running time %0.2f" % (end_time - start_time) + " seconds")
+print("Finish Samarati!!")

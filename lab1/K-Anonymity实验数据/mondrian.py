@@ -1,30 +1,93 @@
-# coding:utf-8
-"""
-main module of mondrian
-"""
-
-
 import pdb
 import time
 from utility import cmp_value, value, merge_qi_value
 from functools import cmp_to_key
-from read_adult_data import read_data as read_adult
-import sys, copy, random
+import copy
 # warning all these variables should be re-inited, if
 # you want to run mondrian with different parameters
-DATA_SELECT = 'a'
-RELAX = False
 INTUITIVE_ORDER = None
-__DEBUG = False
-QI_LEN = 2
+QI_LEN = 9
 GL_K = 0
 RESULT = []
 QI_RANGE = []
 QI_DICT = []
 QI_ORDER = []
 
-class Partition(object):
 
+"""
+read adult data set
+"""
+
+# !/usr/bin/env python
+# coding=utf-8
+
+# Read data and read tree functions for INFORMS data
+# attributes ['age', 'work_class', 'final_weight', 'education', 'education_num',
+# 'marital_status', 'occupation', 'relationship', 'race', 'sex', 'capital_gain',
+# 'capital_loss', 'hours_per_week', 'native_country', 'class']
+# QID ['age', 'work_class', 'education', 'education_num', 'race', 'sex', 'native_country']
+# SA ['occupation']
+
+
+ATT_NAME = ['age', 'work_class', 'final_weight', 'education',
+            'education_num', 'marital_status', 'occupation', 'relationship',
+            'race', 'sex', 'capital_gain', 'capital_loss', 'hours_per_week',
+            'native_country', 'class']
+QI_INDEX = [0, 1, 4, 5, 8, 9, 13]
+IS_CAT = [False, True, False, True, True, True, True]
+SA_INDEX = 6
+
+
+def read_data():
+    """
+    read microdata for *.txt and return read data
+
+    # Note that Mondrian can only handle numeric attribute
+    # So, categorical attributes should be transformed to numeric attributes
+    # before anonymization. For example, Male and Female should be transformed
+    # to 0, 1 during pre-processing. Then, after anonymization, 0 and 1 should
+    # be transformed to Male and Female.
+    """
+    QI_num = len(QI_INDEX)
+    data = []
+    # oder categorical attributes in intuitive order
+    # here, we use the appear number
+    intuitive_dict = []
+    intuitive_order = []
+    intuitive_number = []
+    for i in range(QI_num):
+        intuitive_dict.append(dict())
+        intuitive_number.append(0)
+        intuitive_order.append(list())
+    data_file = open('adult.data', 'r')
+    for line in data_file:
+        line = line.strip()
+        # remove empty and incomplete lines
+        # only 30162 records will be kept
+        if len(line) == 0 or '?' in line:
+            continue
+        # remove double spaces
+        line = line.replace(' ', '')
+        temp = line.split(',')
+        ltemp = []
+        for i in range(QI_num):
+            index = QI_INDEX[i]
+            if IS_CAT[i]:
+                try:
+                    ltemp.append(intuitive_dict[i][temp[index]])
+                except KeyError:
+                    intuitive_dict[i][temp[index]] = intuitive_number[i]
+                    ltemp.append(intuitive_number[i])
+                    intuitive_number[i] += 1
+                    intuitive_order[i].append(temp[index])
+            else:
+                ltemp.append(int(temp[index]))
+        ltemp.append(temp[SA_INDEX])
+        data.append(ltemp)
+    return data, intuitive_order
+
+
+class Partition(object):
     """
     Class for Group (or EC), which is used to keep records
     self.member: records in group
@@ -34,31 +97,19 @@ class Partition(object):
     """
 
     def __init__(self, data, low, high):
-        """
-        split_tuple = (index, low, high)
-        """
         self.low = list(low)
         self.high = list(high)
         self.member = data[:]
         self.allow = [1] * QI_LEN
 
     def add_record(self, record, dim):
-        """
-        add one record to member
-        """
         self.member.append(record)
 
     def add_multiple_record(self, records, dim):
-        """
-        add multiple records (list) to partition
-        """
         for record in records:
             self.add_record(record, dim)
 
     def __len__(self):
-        """
-        return number of records
-        """
         return len(self.member)
 
 
@@ -68,7 +119,8 @@ def get_normalized_width(partition, index):
     similar to NCP
     """
     d_order = QI_ORDER[index]
-    width = value(d_order[partition.high[index]]) - value(d_order[partition.low[index]])
+    width = value(d_order[partition.high[index]]) - \
+        value(d_order[partition.low[index]])
     if width == QI_RANGE[index]:
         return 1
     return width * 1.0 / QI_RANGE[index]
@@ -136,9 +188,6 @@ def find_median(partition, dim):
     try:
         next_val = value_list[split_index + 1]
     except IndexError:
-        # there is a frequency value in partition
-        # which can be handle by mid_set
-        # e.g.[1, 2, 3, 4, 4, 4, 4]
         next_val = split_val
     return (split_val, next_val, value_list[0], value_list[-1])
 
@@ -226,7 +275,7 @@ def init(data, k, QI_num=-1):
             QI_DICT[i][qi_value] = index
 
 
-def mondrian(data, k, relax=False, QI_num=-1):
+def mondrian(data, k, QI_num=-1):
     """
     Main function of mondrian, return result in tuple (result, (ncp, rtime)).
     data: dataset in 2-dimensional array.
@@ -264,21 +313,14 @@ def mondrian(data, k, relax=False, QI_num=-1):
         for record in partition.member[:]:
             for index in range(QI_LEN):
                 record[index] = merge_qi_value(QI_ORDER[index][partition.low[index]],
-                                QI_ORDER[index][partition.high[index]])
+                                               QI_ORDER[index][partition.high[index]])
             result.append(record)
     # If you want to get NCP values instead of percentage
     # please remove next three lines
-    ncp /= QI_LEN
+    #ncp /= QI_LEN
     ncp /= data_size
-    ncp *= 100
-    if __DEBUG:
-        from decimal import Decimal
-        print("Discernability Penalty=%.2E" % Decimal(str(dp)))
-        print("size of partitions=%d" % len(RESULT))
-        print("K=%d" % k)
-        print("NCP = %.2f %%" % ncp)
+    #ncp *= 100
     return (result, (ncp, rtime))
-
 
 
 def write_to_file(result):
@@ -296,86 +338,16 @@ def get_result_one(data, k=10):
     """
     print("K=%d" % k)
     data_back = copy.deepcopy(data)
-    result, eval_result = mondrian(data, k, RELAX)
+    result, eval_result = mondrian(data, k)
     # Convert numerical values back to categorical values if necessary
-    if DATA_SELECT == 'a':
-        result = covert_to_raw(result)
-    else:
-        for r in result:
-            r[-1] = ','.join(r[-1])
+
+    result = covert_to_raw(result)
+
     # write to anonymized.out
     write_to_file(result)
     data = copy.deepcopy(data_back)
-    print("NCP %0.2f" % eval_result[0] + "%")
-    print("Running time %0.2f" % eval_result[1] + " seconds")
-
-
-def get_result_k(data):
-    """
-    change k, while fixing QD and size of data set
-    """
-    data_back = copy.deepcopy(data)
-    for k in range(5, 105, 5):
-        print('#' * 30)
-        print("K=%d" % k)
-        result, eval_result = mondrian(data, k, RELAX)
-        if DATA_SELECT == 'a':
-            result = covert_to_raw(result)
-        data = copy.deepcopy(data_back)
-        print("NCP %0.2f" % eval_result[0] + "%")
-        print("Running time %0.2f" % eval_result[1] + " seconds")
-
-
-def get_result_dataset(data, k=10, num_test=10):
-    """
-    fix k and QI, while changing size of data set
-    num_test is the test number.
-    """
-    data_back = copy.deepcopy(data)
-    length = len(data_back)
-    joint = 5000
-    datasets = []
-    check_time = length / joint
-    if length % joint == 0:
-        check_time -= 1
-    for i in range(check_time):
-        datasets.append(joint * (i + 1))
-    datasets.append(length)
-    ncp = 0
-    rtime = 0
-    for pos in datasets:
-        print('#' * 30)
-        print("size of dataset %d" % pos)
-        for j in range(num_test):
-            temp = random.sample(data, pos)
-            result, eval_result = mondrian(temp, k, RELAX)
-            if DATA_SELECT == 'a':
-                result = covert_to_raw(result)
-            ncp += eval_result[0]
-            rtime += eval_result[1]
-            data = copy.deepcopy(data_back)
-        ncp /= num_test
-        rtime /= num_test
-        print("Average NCP %0.2f" % ncp + "%")
-        print("Running time %0.2f" % rtime + " seconds")
-        print('#' * 30)
-
-
-def get_result_qi(data, k=10):
-    """
-    change number of QI, while fixing k and size of data set
-    """
-    data_back = copy.deepcopy(data)
-    num_data = len(data[0])
-    for i in reversed(list(range(1, num_data))):
-        print('#' * 30)
-        print("Number of QI=%d" % i)
-        result, eval_result = mondrian(data, k, RELAX, i)
-        if DATA_SELECT == 'a':
-            result = covert_to_raw(result)
-        data = copy.deepcopy(data_back)
-        print("NCP %0.2f" % eval_result[0] + "%")
-        print("Running time %0.2f" % eval_result[1] + " seconds")
+    print("LM %.2f" % eval_result[0] + "%")
+    print("Running time %.2f" % eval_result[1] + " seconds")
 
 
 def covert_to_raw(result, connect_str='~'):
@@ -407,31 +379,32 @@ def covert_to_raw(result, connect_str='~'):
         if isinstance(record[-1], str):
             covert_result.append(covert_record + [record[-1]])
         else:
-            covert_result.append(covert_record + [connect_str.join(record[-1])])
+            covert_result.append(
+                covert_record + [connect_str.join(record[-1])])
     return covert_result
 
+def get_result_k(data):
+    """
+    change k, while fixing QD and size of data set
+    """
+    data_back = copy.deepcopy(data)
+    for k in range(5, 105, 5):
+        print('#' * 30)
+        print("K=%d" % k)
+        result, eval_result = mondrian(data, k)
+ 
+        result = covert_to_raw(result)
+        data = copy.deepcopy(data_back)
+        print("NCP %0.2f" % eval_result[0] + "%")
+        print("Running time %0.2f" % eval_result[1] + " seconds")
 
 if __name__ == '__main__':
-    FLAG = ''
-    try:
-        MODEL = sys.argv[1]
-        DATA_SELECT = sys.argv[2]
-    except IndexError:
-        MODEL = 's'
-        DATA_SELECT = 'a'
-    INPUT_K = 10
+
+    INPUT_K = 100
     # read record
-
-    RELAX = False
-    print("Strict Mondrian")
-    print("Adult data")
-        # INTUITIVE_ORDER is an intuitive order for
-        # categorical attributes. This order is produced
-        # by the reading (from data set) order.
-    DATA, INTUITIVE_ORDER = read_adult()
-    print(INTUITIVE_ORDER)
-
-
-    get_result_one(DATA, INPUT_K)
+    DATA, INTUITIVE_ORDER = read_data()
+    
+    #get_result_k(DATA)
+    get_result_one(DATA,INPUT_K)
     # anonymized dataset is stored in result
     print("Finish Mondrian!!")
