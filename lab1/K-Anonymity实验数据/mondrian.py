@@ -325,11 +325,11 @@ def mondrian(data, k, QI_num=-1):
 
 def write_to_file(result):
     """
-    write the anonymized result to anonymized.data
+    write the anonymized result to adult_mondrian.data
     """
-    with open("anonymized.data", "w") as output:
+    with open("adult_mondrian.data", "w") as output:
         for r in result:
-            output.write(';'.join(r) + '\n')
+            output.write(','.join(r) + '\n')
 
 
 def get_result_one(data, k=10):
@@ -346,7 +346,7 @@ def get_result_one(data, k=10):
     # write to anonymized.out
     write_to_file(result)
     data = copy.deepcopy(data_back)
-    print("LM %.2f" % eval_result[0] + "%")
+    print("LM %.2f" % eval_result[0])
     print("Running time %.2f" % eval_result[1] + " seconds")
 
 
@@ -395,12 +395,12 @@ def get_result_k(data):
  
         result = covert_to_raw(result)
         data = copy.deepcopy(data_back)
-        print("NCP %0.2f" % eval_result[0] + "%")
+        print("LM %0.2f" % eval_result[0] )
         print("Running time %0.2f" % eval_result[1] + " seconds")
 
 if __name__ == '__main__':
 
-    INPUT_K = 100
+    INPUT_K = 320
     # read record
     DATA, INTUITIVE_ORDER = read_data()
     

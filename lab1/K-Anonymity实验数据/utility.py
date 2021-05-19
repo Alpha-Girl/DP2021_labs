@@ -34,9 +34,6 @@ def value(x):
     '''Return the numeric type that supports addition and subtraction'''
     if isinstance(x, (int, float)):
         return float(x)
-    elif isinstance(x, datetime):
-        return time.mktime(x.timetuple())
-        # return x.timestamp() # not supported by python 2.7
     else:
         try:
             return float(x)
@@ -59,11 +56,6 @@ def merge_qi_value(x_left, x_right, connect_str='~'):
             result = x_left
         else:
             result = x_left + connect_str + x_right
-    elif isinstance(x_left, datetime):
-        # Generalize the datetime type value
-        begin_date = x_left.strftime("%Y-%m-%d %H:%M:%S")
-        end_date = x_right.strftime("%Y-%m-%d %H:%M:%S")
-        result = begin_date + connect_str + end_date
     return result
 
 
