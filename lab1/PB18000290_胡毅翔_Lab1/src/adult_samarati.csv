@@ -73,7 +73,6 @@ age,gender,race,marital_status,occupation
 31, Female,*,*, Sales
 29, Male,*,*, Sales
 23, Male,*,*, Machine-op-inspct
-79, Male,*,*, Prof-specialty
 27, Male,*,*, Other-service
 40, Male,*,*, Adm-clerical
 67, Male,*,*, ?
@@ -227,7 +226,6 @@ age,gender,race,marital_status,occupation
 18, Female,*,*, Sales
 60, Female,*,*, ?
 66, Male,*,*, Farming-fishing
-75, Female,*,*, Adm-clerical
 65, Female,*,*, Adm-clerical
 35, Male,*,*, Transport-moving
 41, Female,*,*, Sales
@@ -429,7 +427,6 @@ age,gender,race,marital_status,occupation
 23, Male,*,*, Handlers-cleaners
 63, Male,*,*, Exec-managerial
 47, Male,*,*, Prof-specialty
-80, Male,*,*, ?
 17, Male,*,*, ?
 40, Female,*,*, Prof-specialty
 30, Female,*,*, Other-service
@@ -526,7 +523,6 @@ age,gender,race,marital_status,occupation
 44, Male,*,*, Machine-op-inspct
 28, Female,*,*, Sales
 42, Male,*,*, Exec-managerial
-74, Female,*,*, Adm-clerical
 38, Male,*,*, Craft-repair
 44, Male,*,*, Prof-specialty
 44, Female,*,*, Machine-op-inspct
@@ -917,7 +913,6 @@ age,gender,race,marital_status,occupation
 39, Male,*,*, Exec-managerial
 43, Female,*,*, Prof-specialty
 67, Male,*,*, Exec-managerial
-81, Male,*,*, Exec-managerial
 21, Male,*,*, Other-service
 23, Male,*,*, Sales
 25, Male,*,*, Transport-moving
@@ -977,7 +972,6 @@ age,gender,race,marital_status,occupation
 25, Female,*,*, Sales
 21, Female,*,*, Exec-managerial
 40, Male,*,*, Prof-specialty
-78, Female,*,*, Other-service
 34, Male,*,*, Handlers-cleaners
 49, Female,*,*, Adm-clerical
 22, Female,*,*, Adm-clerical
@@ -1039,7 +1033,6 @@ age,gender,race,marital_status,occupation
 37, Male,*,*, Other-service
 34, Female,*,*, Priv-house-serv
 34, Female,*,*, ?
-90, Female,*,*, Other-service
 23, Female,*,*, Machine-op-inspct
 43, Female,*,*, Adm-clerical
 44, Male,*,*, Exec-managerial
@@ -1167,7 +1160,6 @@ age,gender,race,marital_status,occupation
 33, Female,*,*, Adm-clerical
 65, Male,*,*, Adm-clerical
 22, Female,*,*, ?
-88, Male,*,*, Prof-specialty
 40, Male,*,*, Transport-moving
 51, Female,*,*, Adm-clerical
 50, Female,*,*, Other-service
@@ -1457,7 +1449,6 @@ age,gender,race,marital_status,occupation
 56, Female,*,*, Adm-clerical
 25, Male,*,*, Craft-repair
 22, Male,*,*, Transport-moving
-76, Female,*,*, ?
 41, Male,*,*, Prof-specialty
 48, Male,*,*, Exec-managerial
 46, Male,*,*, Machine-op-inspct
@@ -1561,7 +1552,6 @@ age,gender,race,marital_status,occupation
 21, Female,*,*, Other-service
 18, Male,*,*, Handlers-cleaners
 45, Male,*,*, Craft-repair
-75, Female,*,*, ?
 51, Male,*,*, Protective-serv
 42, Female,*,*, Other-service
 47, Female,*,*, Other-service
@@ -1996,7 +1986,6 @@ age,gender,race,marital_status,occupation
 30, Female,*,*, Exec-managerial
 44, Male,*,*, Machine-op-inspct
 49, Male,*,*, Sales
-75, Female,*,*, Prof-specialty
 37, Male,*,*, Sales
 51, Male,*,*, Craft-repair
 35, Male,*,*, Craft-repair
@@ -2153,7 +2142,6 @@ age,gender,race,marital_status,occupation
 30, Male,*,*, Adm-clerical
 21, Male,*,*, ?
 44, Male,*,*, Prof-specialty
-75, Female,*,*, Priv-house-serv
 66, Male,*,*, ?
 26, Male,*,*, Craft-repair
 33, Male,*,*, Sales
@@ -2188,7 +2176,6 @@ age,gender,race,marital_status,occupation
 47, Male,*,*, Prof-specialty
 24, Male,*,*, Machine-op-inspct
 29, Male,*,*, Sales
-74, Female,*,*, Transport-moving
 50, Male,*,*, Transport-moving
 22, Female,*,*, Adm-clerical
 48, Female,*,*, Adm-clerical
@@ -2614,7 +2601,6 @@ age,gender,race,marital_status,occupation
 31, Male,*,*, Sales
 19, Male,*,*, Machine-op-inspct
 41, Male,*,*, Exec-managerial
-74, Female,*,*, Adm-clerical
 27, Male,*,*, Transport-moving
 23, Female,*,*, Adm-clerical
 31, Male,*,*, Sales
@@ -2683,7 +2669,6 @@ age,gender,race,marital_status,occupation
 55, Male,*,*, Prof-specialty
 61, Male,*,*, Prof-specialty
 37, Male,*,*, Tech-support
-78, Male,*,*, Exec-managerial
 27, Female,*,*, Adm-clerical
 49, Male,*,*, Prof-specialty
 55, Male,*,*, Prof-specialty
@@ -2753,7 +2738,6 @@ age,gender,race,marital_status,occupation
 55, Male,*,*, ?
 53, Male,*,*, Exec-managerial
 43, Male,*,*, Sales
-80, Male,*,*, Farming-fishing
 24, Female,*,*, Other-service
 43, Male,*,*, Exec-managerial
 22, Male,*,*, Handlers-cleaners
@@ -2890,7 +2874,6 @@ age,gender,race,marital_status,occupation
 34, Female,*,*, Prof-specialty
 36, Male,*,*, Adm-clerical
 40, Female,*,*, Other-service
-90, Female,*,*, Adm-clerical
 56, Male,*,*, Exec-managerial
 21, Female,*,*, Prof-specialty
 48, Male,*,*, Exec-managerial
@@ -2905,7 +2888,6 @@ age,gender,race,marital_status,occupation
 42, Male,*,*, Sales
 31, Male,*,*, Other-service
 53, Female,*,*, Other-service
-81, Female,*,*, Priv-house-serv
 33, Female,*,*, Adm-clerical
 17, Female,*,*, Other-service
 55, Male,*,*, Exec-managerial
@@ -2966,7 +2948,6 @@ age,gender,race,marital_status,occupation
 27, Female,*,*, Craft-repair
 38, Male,*,*, Exec-managerial
 27, Male,*,*, Craft-repair
-75, Female,*,*, Adm-clerical
 49, Male,*,*, Sales
 27, Male,*,*, Sales
 36, Male,*,*, Farming-fishing
@@ -3210,7 +3191,6 @@ age,gender,race,marital_status,occupation
 47, Male,*,*, Machine-op-inspct
 59, Female,*,*, Prof-specialty
 32, Male,*,*, Handlers-cleaners
-82, Male,*,*, ?
 49, Male,*,*, Sales
 74, Male,*,*, Other-service
 22, Male,*,*, Adm-clerical
@@ -3337,7 +3317,6 @@ age,gender,race,marital_status,occupation
 53, Female,*,*, Machine-op-inspct
 33, Female,*,*, Adm-clerical
 46, Male,*,*, Exec-managerial
-79, Female,*,*, ?
 31, Female,*,*, Craft-repair
 24, Male,*,*, Other-service
 57, Female,*,*, Adm-clerical
@@ -3536,7 +3515,6 @@ age,gender,race,marital_status,occupation
 21, Male,*,*, Other-service
 18, Male,*,*, Other-service
 49, Male,*,*, Exec-managerial
-81, Female,*,*, Adm-clerical
 36, Male,*,*, Exec-managerial
 47, Male,*,*, Craft-repair
 36, Male,*,*, Sales
@@ -3587,7 +3565,6 @@ age,gender,race,marital_status,occupation
 25, Male,*,*, Other-service
 28, Female,*,*, Prof-specialty
 54, Female,*,*, Sales
-74, Female,*,*, ?
 31, Female,*,*, Exec-managerial
 23, Male,*,*, Tech-support
 19, Female,*,*, Prof-specialty
@@ -3632,7 +3609,6 @@ age,gender,race,marital_status,occupation
 30, Female,*,*, Prof-specialty
 60, Male,*,*, ?
 25, Female,*,*, Adm-clerical
-76, Female,*,*, Protective-serv
 41, Male,*,*, Craft-repair
 26, Male,*,*, Machine-op-inspct
 45, Male,*,*, Machine-op-inspct
@@ -3772,11 +3748,9 @@ age,gender,race,marital_status,occupation
 40, Female,*,*, Prof-specialty
 51, Female,*,*, Priv-house-serv
 52, Male,*,*, Transport-moving
-74, Female,*,*, ?
 49, Male,*,*, Exec-managerial
 20, Female,*,*, ?
 40, Female,*,*, Adm-clerical
-80, Male,*,*, Prof-specialty
 63, Male,*,*, Protective-serv
 63, Male,*,*, Transport-moving
 51, Female,*,*, Adm-clerical
@@ -3962,7 +3936,6 @@ age,gender,race,marital_status,occupation
 43, Male,*,*, Prof-specialty
 62, Male,*,*, Craft-repair
 30, Male,*,*, Craft-repair
-83, Female,*,*, ?
 39, Male,*,*, Prof-specialty
 41, Female,*,*, Transport-moving
 49, Female,*,*, Prof-specialty
@@ -3989,7 +3962,6 @@ age,gender,race,marital_status,occupation
 37, Male,*,*, Other-service
 52, Male,*,*, Machine-op-inspct
 22, Male,*,*, Protective-serv
-77, Female,*,*, ?
 19, Male,*,*, Adm-clerical
 52, Male,*,*, Craft-repair
 42, Female,*,*, Tech-support
@@ -4108,7 +4080,6 @@ age,gender,race,marital_status,occupation
 40, Female,*,*, Sales
 52, Male,*,*, Other-service
 23, Male,*,*, Sales
-90, Female,*,*, ?
 25, Female,*,*, Adm-clerical
 43, Male,*,*, Transport-moving
 38, Female,*,*, Protective-serv
@@ -4719,7 +4690,6 @@ age,gender,race,marital_status,occupation
 34, Male,*,*, Craft-repair
 46, Female,*,*, Other-service
 39, Female,*,*, Exec-managerial
-79, Female,*,*, Other-service
 60, Male,*,*, ?
 24, Male,*,*, Sales
 31, Male,*,*, Craft-repair
@@ -4758,7 +4728,6 @@ age,gender,race,marital_status,occupation
 32, Male,*,*, Craft-repair
 37, Male,*,*, Machine-op-inspct
 31, Male,*,*, Craft-repair
-76, Female,*,*, Sales
 54, Female,*,*, Sales
 32, Male,*,*, Prof-specialty
 31, Female,*,*, Adm-clerical
@@ -4833,7 +4802,6 @@ age,gender,race,marital_status,occupation
 56, Female,*,*, Adm-clerical
 53, Male,*,*, Craft-repair
 26, Male,*,*, Sales
-81, Female,*,*, Adm-clerical
 28, Female,*,*, ?
 57, Male,*,*, Prof-specialty
 34, Female,*,*, Adm-clerical
@@ -5271,7 +5239,6 @@ age,gender,race,marital_status,occupation
 59, Male,*,*, Transport-moving
 38, Male,*,*, Transport-moving
 20, Male,*,*, Transport-moving
-90, Female,*,*, Adm-clerical
 35, Male,*,*, Sales
 50, Male,*,*, Protective-serv
 45, Male,*,*, Prof-specialty
@@ -5290,7 +5257,6 @@ age,gender,race,marital_status,occupation
 32, Male,*,*, Transport-moving
 36, Male,*,*, Machine-op-inspct
 47, Male,*,*, Prof-specialty
-80, Female,*,*, Prof-specialty
 21, Female,*,*, Sales
 35, Male,*,*, Farming-fishing
 77, Male,*,*, ?
@@ -5589,7 +5555,6 @@ age,gender,race,marital_status,occupation
 31, Male,*,*, Handlers-cleaners
 57, Male,*,*, Prof-specialty
 30, Male,*,*, Exec-managerial
-78, Female,*,*, ?
 28, Female,*,*, Sales
 30, Male,*,*, Sales
 29, Male,*,*, Prof-specialty
@@ -5831,7 +5796,6 @@ age,gender,race,marital_status,occupation
 19, Male,*,*, Other-service
 60, Female,*,*, Machine-op-inspct
 46, Male,*,*, Exec-managerial
-78, Female,*,*, ?
 26, Female,*,*, Exec-managerial
 58, Male,*,*, Other-service
 37, Male,*,*, Exec-managerial
@@ -5999,7 +5963,6 @@ age,gender,race,marital_status,occupation
 24, Male,*,*, Craft-repair
 40, Male,*,*, Craft-repair
 23, Male,*,*, Craft-repair
-79, Male,*,*, Exec-managerial
 44, Female,*,*, Adm-clerical
 51, Female,*,*, Prof-specialty
 30, Male,*,*, Machine-op-inspct
@@ -6034,7 +5997,6 @@ age,gender,race,marital_status,occupation
 34, Female,*,*, Adm-clerical
 41, Male,*,*, Adm-clerical
 27, Male,*,*, Adm-clerical
-78, Male,*,*, Exec-managerial
 40, Male,*,*, Transport-moving
 26, Male,*,*, Transport-moving
 43, Male,*,*, Other-service
@@ -6172,7 +6134,6 @@ age,gender,race,marital_status,occupation
 45, Male,*,*, Exec-managerial
 47, Male,*,*, Handlers-cleaners
 56, Female,*,*, Other-service
-79, Male,*,*, Prof-specialty
 20, Female,*,*, Adm-clerical
 30, Male,*,*, Craft-repair
 27, Male,*,*, Sales
@@ -6213,7 +6174,6 @@ age,gender,race,marital_status,occupation
 41, Female,*,*, Adm-clerical
 43, Male,*,*, Tech-support
 36, Male,*,*, Farming-fishing
-84, Male,*,*, Farming-fishing
 23, Male,*,*, Sales
 41, Male,*,*, Prof-specialty
 55, Male,*,*, Exec-managerial
@@ -6415,7 +6375,6 @@ age,gender,race,marital_status,occupation
 34, Male,*,*, Craft-repair
 37, Male,*,*, Prof-specialty
 49, Male,*,*, Exec-managerial
-74, Female,*,*, Adm-clerical
 37, Male,*,*, Farming-fishing
 20, Male,*,*, Handlers-cleaners
 40, Female,*,*, Exec-managerial
@@ -6438,7 +6397,6 @@ age,gender,race,marital_status,occupation
 19, Female,*,*, Sales
 17, Male,*,*, Other-service
 33, Male,*,*, Sales
-80, Female,*,*, Other-service
 24, Male,*,*, Craft-repair
 28, Male,*,*, Prof-specialty
 55, Female,*,*, Exec-managerial
@@ -6747,7 +6705,6 @@ age,gender,race,marital_status,occupation
 21, Male,*,*, Other-service
 75, Male,*,*, Prof-specialty
 21, Male,*,*, Other-service
-81, Male,*,*, Sales
 54, Male,*,*, Other-service
 34, Male,*,*, Prof-specialty
 54, Male,*,*, Prof-specialty
@@ -7480,7 +7437,6 @@ age,gender,race,marital_status,occupation
 35, Female,*,*, Other-service
 70, Male,*,*, Craft-repair
 45, Male,*,*, Sales
-83, Male,*,*, Protective-serv
 59, Female,*,*, Other-service
 18, Male,*,*, Other-service
 31, Male,*,*, Adm-clerical
@@ -7719,7 +7675,6 @@ age,gender,race,marital_status,occupation
 18, Female,*,*, Adm-clerical
 50, Male,*,*, Exec-managerial
 69, Female,*,*, Adm-clerical
-84, Male,*,*, Prof-specialty
 47, Male,*,*, Exec-managerial
 19, Male,*,*, Handlers-cleaners
 24, Male,*,*, Prof-specialty
@@ -7871,7 +7826,6 @@ age,gender,race,marital_status,occupation
 50, Male,*,*, Craft-repair
 33, Male,*,*, Exec-managerial
 28, Male,*,*, Handlers-cleaners
-81, Female,*,*, ?
 24, Female,*,*, Tech-support
 32, Male,*,*, Craft-repair
 47, Male,*,*, Transport-moving
@@ -8175,7 +8129,6 @@ age,gender,race,marital_status,occupation
 42, Female,*,*, Prof-specialty
 63, Male,*,*, Prof-specialty
 28, Male,*,*, Sales
-79, Male,*,*, Adm-clerical
 39, Male,*,*, Craft-repair
 29, Male,*,*, Other-service
 60, Male,*,*, Other-service
@@ -8380,7 +8333,6 @@ age,gender,race,marital_status,occupation
 40, Male,*,*, Machine-op-inspct
 61, Male,*,*, Other-service
 34, Female,*,*, Adm-clerical
-85, Male,*,*, Sales
 41, Female,*,*, Adm-clerical
 31, Female,*,*, Adm-clerical
 22, Female,*,*, Sales
@@ -8430,7 +8382,6 @@ age,gender,race,marital_status,occupation
 49, Female,*,*, Handlers-cleaners
 18, Female,*,*, ?
 26, Female,*,*, Prof-specialty
-82, Male,*,*, Handlers-cleaners
 40, Male,*,*, Craft-repair
 28, Male,*,*, Craft-repair
 23, Male,*,*, Sales
@@ -8445,7 +8396,6 @@ age,gender,race,marital_status,occupation
 40, Male,*,*, Tech-support
 39, Female,*,*, Exec-managerial
 24, Female,*,*, Adm-clerical
-78, Male,*,*, ?
 67, Female,*,*, ?
 49, Male,*,*, Sales
 66, Male,*,*, Machine-op-inspct
@@ -8521,7 +8471,6 @@ age,gender,race,marital_status,occupation
 41, Female,*,*, Machine-op-inspct
 32, Male,*,*, Handlers-cleaners
 61, Female,*,*, Other-service
-79, Male,*,*, Prof-specialty
 34, Male,*,*, Machine-op-inspct
 46, Male,*,*, Exec-managerial
 50, Male,*,*, Sales
@@ -8693,7 +8642,6 @@ age,gender,race,marital_status,occupation
 48, Male,*,*, Craft-repair
 65, Male,*,*, ?
 45, Male,*,*, Handlers-cleaners
-80, Male,*,*, ?
 23, Female,*,*, Other-service
 33, Male,*,*, Prof-specialty
 38, Male,*,*, Farming-fishing
@@ -8962,7 +8910,6 @@ age,gender,race,marital_status,occupation
 57, Female,*,*, Adm-clerical
 59, Male,*,*, Farming-fishing
 32, Female,*,*, Prof-specialty
-90, Female,*,*, ?
 22, Female,*,*, Exec-managerial
 39, Female,*,*, Adm-clerical
 43, Male,*,*, Exec-managerial
@@ -9054,7 +9001,6 @@ age,gender,race,marital_status,occupation
 29, Female,*,*, Sales
 50, Female,*,*, Exec-managerial
 18, Male,*,*, Handlers-cleaners
-74, Female,*,*, Other-service
 22, Male,*,*, Sales
 27, Male,*,*, Prof-specialty
 27, Female,*,*, Tech-support
@@ -9146,7 +9092,6 @@ age,gender,race,marital_status,occupation
 25, Male,*,*, Prof-specialty
 44, Male,*,*, Prof-specialty
 37, Male,*,*, Exec-managerial
-75, Female,*,*, ?
 21, Female,*,*, ?
 21, Female,*,*, Sales
 47, Male,*,*, Craft-repair
@@ -9470,7 +9415,6 @@ age,gender,race,marital_status,occupation
 40, Female,*,*, Prof-specialty
 32, Female,*,*, Prof-specialty
 20, Male,*,*, Machine-op-inspct
-84, Female,*,*, Exec-managerial
 40, Male,*,*, Craft-repair
 37, Female,*,*, Sales
 44, Male,*,*, Transport-moving
@@ -9734,7 +9678,6 @@ age,gender,race,marital_status,occupation
 49, Male,*,*, Sales
 69, Female,*,*, Adm-clerical
 35, Male,*,*, Exec-managerial
-78, Male,*,*, Craft-repair
 61, Male,*,*, Exec-managerial
 24, Female,*,*, Prof-specialty
 29, Female,*,*, Adm-clerical
@@ -9769,7 +9712,6 @@ age,gender,race,marital_status,occupation
 39, Male,*,*, Sales
 36, Female,*,*, Craft-repair
 57, Male,*,*, Prof-specialty
-78, Female,*,*, Machine-op-inspct
 24, Male,*,*, Craft-repair
 39, Female,*,*, Adm-clerical
 21, Male,*,*, Sales
@@ -10014,7 +9956,6 @@ age,gender,race,marital_status,occupation
 24, Female,*,*, Sales
 70, Female,*,*, ?
 24, Female,*,*, Sales
-74, Female,*,*, ?
 23, Female,*,*, ?
 41, Male,*,*, Exec-managerial
 45, Female,*,*, Sales
@@ -10123,7 +10064,6 @@ age,gender,race,marital_status,occupation
 28, Female,*,*, Exec-managerial
 50, Female,*,*, Prof-specialty
 47, Male,*,*, Craft-repair
-80, Male,*,*, Farming-fishing
 47, Female,*,*, Adm-clerical
 19, Male,*,*, ?
 45, Male,*,*, Sales
@@ -10545,7 +10485,6 @@ age,gender,race,marital_status,occupation
 33, Male,*,*, Transport-moving
 41, Male,*,*, Sales
 90, Male,*,*, Craft-repair
-78, Male,*,*, ?
 36, Female,*,*, Exec-managerial
 30, Male,*,*, Sales
 35, Male,*,*, Exec-managerial
@@ -10555,7 +10494,6 @@ age,gender,race,marital_status,occupation
 40, Female,*,*, Other-service
 49, Male,*,*, Machine-op-inspct
 19, Male,*,*, Other-service
-77, Female,*,*, Priv-house-serv
 46, Male,*,*, Handlers-cleaners
 41, Male,*,*, Craft-repair
 28, Male,*,*, Farming-fishing
@@ -10786,7 +10724,6 @@ age,gender,race,marital_status,occupation
 28, Female,*,*, ?
 45, Male,*,*, Sales
 30, Male,*,*, Craft-repair
-76, Female,*,*, Other-service
 47, Female,*,*, Adm-clerical
 34, Male,*,*, Transport-moving
 40, Female,*,*, Adm-clerical
@@ -11098,7 +11035,6 @@ age,gender,race,marital_status,occupation
 36, Male,*,*, Prof-specialty
 17, Male,*,*, Handlers-cleaners
 30, Male,*,*, Protective-serv
-79, Male,*,*, ?
 42, Male,*,*, Machine-op-inspct
 67, Male,*,*, Farming-fishing
 36, Male,*,*, Machine-op-inspct
@@ -11237,7 +11173,6 @@ age,gender,race,marital_status,occupation
 35, Female,*,*, Craft-repair
 31, Female,*,*, Adm-clerical
 30, Male,*,*, Handlers-cleaners
-84, Male,*,*, Sales
 35, Male,*,*, Craft-repair
 45, Male,*,*, Farming-fishing
 46, Male,*,*, Craft-repair
@@ -11260,7 +11195,6 @@ age,gender,race,marital_status,occupation
 32, Female,*,*, Adm-clerical
 36, Female,*,*, Sales
 54, Male,*,*, Prof-specialty
-78, Male,*,*, ?
 46, Female,*,*, Exec-managerial
 18, Female,*,*, Sales
 57, Male,*,*, Protective-serv
@@ -11498,7 +11432,6 @@ age,gender,race,marital_status,occupation
 22, Male,*,*, Handlers-cleaners
 21, Male,*,*, Craft-repair
 33, Male,*,*, Adm-clerical
-76, Female,*,*, Other-service
 22, Female,*,*, ?
 37, Male,*,*, Adm-clerical
 34, Male,*,*, Sales
@@ -11508,10 +11441,8 @@ age,gender,race,marital_status,occupation
 73, Male,*,*, Exec-managerial
 43, Female,*,*, Exec-managerial
 39, Male,*,*, Craft-repair
-74, Female,*,*, Other-service
 27, Male,*,*, Prof-specialty
 47, Male,*,*, Transport-moving
-90, Female,*,*, Other-service
 47, Male,*,*, Prof-specialty
 42, Male,*,*, Exec-managerial
 69, Male,*,*, Handlers-cleaners
@@ -11531,7 +11462,6 @@ age,gender,race,marital_status,occupation
 27, Male,*,*, Sales
 27, Male,*,*, Exec-managerial
 45, Female,*,*, Adm-clerical
-79, Male,*,*, ?
 24, Male,*,*, Other-service
 25, Female,*,*, Sales
 42, Male,*,*, Transport-moving
@@ -11731,7 +11661,6 @@ age,gender,race,marital_status,occupation
 19, Female,*,*, Other-service
 30, Male,*,*, Prof-specialty
 90, Male,*,*, ?
-76, Female,*,*, ?
 47, Female,*,*, Adm-clerical
 65, Male,*,*, ?
 25, Male,*,*, Adm-clerical
@@ -11769,7 +11698,6 @@ age,gender,race,marital_status,occupation
 38, Female,*,*, Adm-clerical
 35, Male,*,*, ?
 25, Female,*,*, Tech-support
-78, Female,*,*, ?
 18, Female,*,*, Other-service
 40, Male,*,*, Handlers-cleaners
 61, Male,*,*, ?
@@ -11966,7 +11894,6 @@ age,gender,race,marital_status,occupation
 58, Male,*,*, Exec-managerial
 46, Female,*,*, Adm-clerical
 55, Female,*,*, Machine-op-inspct
-76, Female,*,*, Adm-clerical
 25, Female,*,*, Adm-clerical
 51, Male,*,*, Machine-op-inspct
 33, Male,*,*, Craft-repair
@@ -12243,7 +12170,6 @@ age,gender,race,marital_status,occupation
 28, Male,*,*, Craft-repair
 46, Male,*,*, Exec-managerial
 55, Female,*,*, Handlers-cleaners
-76, Female,*,*, Adm-clerical
 27, Male,*,*, Prof-specialty
 50, Male,*,*, Transport-moving
 75, Male,*,*, Craft-repair
@@ -12491,7 +12417,6 @@ age,gender,race,marital_status,occupation
 21, Female,*,*, Adm-clerical
 24, Male,*,*, Handlers-cleaners
 19, Female,*,*, ?
-82, Male,*,*, ?
 35, Male,*,*, Sales
 32, Male,*,*, Craft-repair
 45, Female,*,*, Adm-clerical
@@ -12599,7 +12524,6 @@ age,gender,race,marital_status,occupation
 57, Male,*,*, Prof-specialty
 33, Male,*,*, Sales
 49, Male,*,*, Adm-clerical
-74, Female,*,*, Prof-specialty
 48, Male,*,*, Exec-managerial
 38, Male,*,*, Exec-managerial
 39, Female,*,*, Machine-op-inspct
@@ -12829,7 +12753,6 @@ age,gender,race,marital_status,occupation
 53, Male,*,*, Exec-managerial
 54, Male,*,*, Sales
 29, Female,*,*, Adm-clerical
-81, Male,*,*, Prof-specialty
 37, Female,*,*, Prof-specialty
 40, Male,*,*, Transport-moving
 36, Female,*,*, Adm-clerical
@@ -13024,8 +12947,6 @@ age,gender,race,marital_status,occupation
 54, Male,*,*, Machine-op-inspct
 52, Male,*,*, Craft-repair
 43, Female,*,*, Handlers-cleaners
-84, Male,*,*, ?
-79, Female,*,*, ?
 35, Male,*,*, Machine-op-inspct
 56, Male,*,*, Transport-moving
 30, Male,*,*, Craft-repair
@@ -13100,7 +13021,6 @@ age,gender,race,marital_status,occupation
 32, Male,*,*, Machine-op-inspct
 47, Male,*,*, Prof-specialty
 50, Male,*,*, Sales
-77, Female,*,*, Priv-house-serv
 33, Male,*,*, Exec-managerial
 47, Male,*,*, Machine-op-inspct
 64, Male,*,*, Transport-moving
@@ -13208,7 +13128,6 @@ age,gender,race,marital_status,occupation
 36, Female,*,*, Prof-specialty
 54, Male,*,*, Sales
 36, Male,*,*, Adm-clerical
-78, Male,*,*, Exec-managerial
 77, Male,*,*, Exec-managerial
 28, Female,*,*, Other-service
 39, Male,*,*, Craft-repair
@@ -13294,7 +13213,6 @@ age,gender,race,marital_status,occupation
 32, Female,*,*, Exec-managerial
 31, Female,*,*, Prof-specialty
 25, Female,*,*, Prof-specialty
-81, Male,*,*, Prof-specialty
 47, Female,*,*, Other-service
 39, Male,*,*, Craft-repair
 37, Male,*,*, Other-service
@@ -13481,7 +13399,6 @@ age,gender,race,marital_status,occupation
 32, Male,*,*, Exec-managerial
 44, Male,*,*, Sales
 21, Male,*,*, Other-service
-75, Female,*,*, Adm-clerical
 55, Male,*,*, Exec-managerial
 43, Female,*,*, Other-service
 31, Male,*,*, Craft-repair
@@ -13541,7 +13458,6 @@ age,gender,race,marital_status,occupation
 39, Male,*,*, Sales
 33, Male,*,*, Craft-repair
 59, Male,*,*, Other-service
-74, Female,*,*, Priv-house-serv
 54, Male,*,*, Protective-serv
 31, Male,*,*, Machine-op-inspct
 31, Female,*,*, Sales
@@ -13635,7 +13551,6 @@ age,gender,race,marital_status,occupation
 68, Male,*,*, Protective-serv
 45, Male,*,*, Adm-clerical
 38, Male,*,*, Prof-specialty
-78, Male,*,*, Exec-managerial
 31, Male,*,*, Farming-fishing
 39, Male,*,*, Adm-clerical
 36, Male,*,*, Machine-op-inspct
@@ -13695,7 +13610,6 @@ age,gender,race,marital_status,occupation
 18, Male,*,*, Other-service
 63, Female,*,*, Sales
 50, Male,*,*, Sales
-82, Male,*,*, Craft-repair
 33, Male,*,*, Handlers-cleaners
 37, Male,*,*, Transport-moving
 24, Male,*,*, Transport-moving
@@ -13927,7 +13841,6 @@ age,gender,race,marital_status,occupation
 33, Male,*,*, Handlers-cleaners
 43, Female,*,*, Other-service
 60, Male,*,*, Exec-managerial
-81, Female,*,*, Prof-specialty
 32, Male,*,*, Exec-managerial
 34, Male,*,*, Transport-moving
 46, Male,*,*, Exec-managerial
@@ -14004,7 +13917,6 @@ age,gender,race,marital_status,occupation
 28, Female,*,*, Other-service
 42, Male,*,*, Protective-serv
 60, Female,*,*, Exec-managerial
-76, Female,*,*, ?
 21, Female,*,*, Other-service
 29, Male,*,*, Farming-fishing
 43, Male,*,*, Prof-specialty
@@ -14103,7 +14015,6 @@ age,gender,race,marital_status,occupation
 40, Male,*,*, Adm-clerical
 30, Male,*,*, Craft-repair
 20, Male,*,*, Other-service
-80, Male,*,*, Prof-specialty
 51, Male,*,*, Machine-op-inspct
 17, Male,*,*, Sales
 37, Male,*,*, Prof-specialty
@@ -14326,7 +14237,6 @@ age,gender,race,marital_status,occupation
 24, Male,*,*, Transport-moving
 38, Male,*,*, Other-service
 48, Male,*,*, Exec-managerial
-75, Female,*,*, Other-service
 43, Male,*,*, Prof-specialty
 64, Female,*,*, Exec-managerial
 67, Male,*,*, ?
@@ -14417,7 +14327,6 @@ age,gender,race,marital_status,occupation
 64, Male,*,*, Exec-managerial
 17, Female,*,*, Handlers-cleaners
 25, Male,*,*, Prof-specialty
-74, Female,*,*, ?
 31, Male,*,*, Machine-op-inspct
 51, Male,*,*, Exec-managerial
 67, Male,*,*, Sales
@@ -14603,7 +14512,6 @@ age,gender,race,marital_status,occupation
 29, Male,*,*, Exec-managerial
 53, Female,*,*, ?
 42, Male,*,*, Exec-managerial
-80, Female,*,*, Adm-clerical
 61, Male,*,*, Transport-moving
 55, Male,*,*, Craft-repair
 20, Female,*,*, Other-service
@@ -14710,7 +14618,6 @@ age,gender,race,marital_status,occupation
 30, Female,*,*, Exec-managerial
 32, Male,*,*, Craft-repair
 23, Female,*,*, Other-service
-84, Female,*,*, Adm-clerical
 46, Male,*,*, Prof-specialty
 67, Female,*,*, Adm-clerical
 29, Male,*,*, Prof-specialty
@@ -14755,7 +14662,6 @@ age,gender,race,marital_status,occupation
 56, Female,*,*, Adm-clerical
 38, Female,*,*, Adm-clerical
 20, Female,*,*, Adm-clerical
-82, Female,*,*, Exec-managerial
 52, Male,*,*, Protective-serv
 32, Male,*,*, Craft-repair
 37, Female,*,*, Prof-specialty
@@ -14883,7 +14789,6 @@ age,gender,race,marital_status,occupation
 36, Male,*,*, Tech-support
 35, Male,*,*, Adm-clerical
 48, Male,*,*, Adm-clerical
-78, Male,*,*, Farming-fishing
 72, Male,*,*, Protective-serv
 24, Male,*,*, Exec-managerial
 58, Male,*,*, ?
@@ -14902,7 +14807,6 @@ age,gender,race,marital_status,occupation
 56, Male,*,*, Craft-repair
 23, Male,*,*, Transport-moving
 33, Female,*,*, Prof-specialty
-79, Male,*,*, Exec-managerial
 28, Male,*,*, Prof-specialty
 55, Female,*,*, Sales
 59, Male,*,*, Prof-specialty
@@ -15101,7 +15005,6 @@ age,gender,race,marital_status,occupation
 63, Male,*,*, Other-service
 62, Male,*,*, Sales
 51, Male,*,*, Sales
-76, Female,*,*, Adm-clerical
 50, Male,*,*, Craft-repair
 45, Male,*,*, Craft-repair
 44, Male,*,*, Sales
@@ -15255,7 +15158,6 @@ age,gender,race,marital_status,occupation
 31, Male,*,*, Exec-managerial
 21, Male,*,*, Craft-repair
 30, Male,*,*, Machine-op-inspct
-74, Female,*,*, ?
 53, Female,*,*, Exec-managerial
 47, Male,*,*, Craft-repair
 60, Female,*,*, Exec-managerial
@@ -15661,7 +15563,6 @@ age,gender,race,marital_status,occupation
 26, Male,*,*, Protective-serv
 52, Male,*,*, Exec-managerial
 52, Male,*,*, Farming-fishing
-84, Female,*,*, Other-service
 33, Female,*,*, Other-service
 46, Male,*,*, Prof-specialty
 30, Female,*,*, Sales
@@ -15891,7 +15792,6 @@ age,gender,race,marital_status,occupation
 43, Male,*,*, Handlers-cleaners
 60, Male,*,*, Sales
 73, Male,*,*, Sales
-90, Female,*,*, Exec-managerial
 62, Male,*,*, Adm-clerical
 28, Male,*,*, Craft-repair
 45, Male,*,*, Craft-repair
@@ -16301,7 +16201,6 @@ age,gender,race,marital_status,occupation
 22, Female,*,*, Sales
 38, Male,*,*, Craft-repair
 33, Female,*,*, Exec-managerial
-83, Male,*,*, Exec-managerial
 34, Male,*,*, Tech-support
 38, Male,*,*, Craft-repair
 33, Female,*,*, Adm-clerical
@@ -16496,7 +16395,6 @@ age,gender,race,marital_status,occupation
 63, Female,*,*, Other-service
 23, Male,*,*, Other-service
 51, Male,*,*, Sales
-75, Female,*,*, Priv-house-serv
 52, Female,*,*, Sales
 69, Male,*,*, Sales
 52, Male,*,*, Prof-specialty
@@ -16522,7 +16420,6 @@ age,gender,race,marital_status,occupation
 61, Male,*,*, Sales
 44, Male,*,*, Adm-clerical
 28, Female,*,*, Adm-clerical
-79, Male,*,*, ?
 51, Female,*,*, Other-service
 44, Male,*,*, Prof-specialty
 24, Male,*,*, Exec-managerial
@@ -16681,7 +16578,6 @@ age,gender,race,marital_status,occupation
 20, Female,*,*, ?
 20, Male,*,*, Exec-managerial
 34, Male,*,*, Farming-fishing
-78, Male,*,*, Exec-managerial
 46, Male,*,*, Craft-repair
 40, Male,*,*, Prof-specialty
 59, Male,*,*, Exec-managerial
@@ -16761,7 +16657,6 @@ age,gender,race,marital_status,occupation
 28, Male,*,*, Sales
 18, Female,*,*, ?
 44, Male,*,*, Craft-repair
-81, Male,*,*, ?
 55, Male,*,*, Exec-managerial
 52, Female,*,*, Other-service
 31, Male,*,*, Prof-specialty
@@ -16900,7 +16795,6 @@ age,gender,race,marital_status,occupation
 27, Male,*,*, Sales
 20, Female,*,*, Sales
 22, Male,*,*, Craft-repair
-80, Male,*,*, Exec-managerial
 52, Male,*,*, Transport-moving
 40, Male,*,*, Adm-clerical
 48, Female,*,*, Machine-op-inspct
@@ -16983,7 +16877,6 @@ age,gender,race,marital_status,occupation
 71, Female,*,*, Sales
 51, Male,*,*, Craft-repair
 32, Male,*,*, Craft-repair
-75, Female,*,*, ?
 57, Male,*,*, Craft-repair
 34, Male,*,*, Craft-repair
 40, Male,*,*, Sales
@@ -17026,7 +16919,6 @@ age,gender,race,marital_status,occupation
 41, Male,*,*, Adm-clerical
 29, Male,*,*, Protective-serv
 36, Male,*,*, Craft-repair
-78, Male,*,*, Sales
 43, Female,*,*, Tech-support
 34, Female,*,*, Exec-managerial
 20, Female,*,*, ?
@@ -17313,7 +17205,6 @@ age,gender,race,marital_status,occupation
 18, Male,*,*, Other-service
 24, Male,*,*, Craft-repair
 33, Male,*,*, Protective-serv
-76, Female,*,*, ?
 57, Male,*,*, Protective-serv
 53, Female,*,*, Prof-specialty
 19, Female,*,*, Sales
@@ -17504,7 +17395,6 @@ age,gender,race,marital_status,occupation
 46, Male,*,*, Sales
 36, Female,*,*, Adm-clerical
 39, Male,*,*, Handlers-cleaners
-78, Male,*,*, ?
 30, Female,*,*, Prof-specialty
 22, Female,*,*, Sales
 43, Male,*,*, Exec-managerial
@@ -17573,7 +17463,6 @@ age,gender,race,marital_status,occupation
 59, Male,*,*, Sales
 22, Female,*,*, Adm-clerical
 44, Male,*,*, Exec-managerial
-76, Female,*,*, Prof-specialty
 50, Male,*,*, Other-service
 33, Male,*,*, Protective-serv
 43, Male,*,*, Craft-repair
@@ -17608,7 +17497,6 @@ age,gender,race,marital_status,occupation
 26, Male,*,*, Other-service
 26, Female,*,*, Adm-clerical
 37, Male,*,*, Farming-fishing
-79, Male,*,*, Sales
 61, Male,*,*, Other-service
 28, Female,*,*, Other-service
 60, Male,*,*, Exec-managerial
@@ -18036,7 +17924,6 @@ age,gender,race,marital_status,occupation
 34, Male,*,*, Armed-Forces
 27, Male,*,*, Transport-moving
 43, Female,*,*, ?
-80, Male,*,*, Exec-managerial
 31, Female,*,*, Other-service
 40, Male,*,*, Craft-repair
 53, Male,*,*, Prof-specialty
@@ -18140,7 +18027,6 @@ age,gender,race,marital_status,occupation
 39, Male,*,*, Craft-repair
 44, Male,*,*, Other-service
 37, Male,*,*, Machine-op-inspct
-79, Male,*,*, Sales
 36, Male,*,*, Exec-managerial
 44, Male,*,*, Craft-repair
 23, Male,*,*, Machine-op-inspct
@@ -18271,7 +18157,6 @@ age,gender,race,marital_status,occupation
 27, Female,*,*, Adm-clerical
 27, Female,*,*, Protective-serv
 45, Male,*,*, Sales
-80, Male,*,*, Prof-specialty
 23, Male,*,*, Other-service
 46, Male,*,*, Exec-managerial
 38, Male,*,*, Sales
@@ -18412,7 +18297,6 @@ age,gender,race,marital_status,occupation
 43, Male,*,*, Farming-fishing
 29, Male,*,*, Craft-repair
 43, Male,*,*, Prof-specialty
-90, Female,*,*, Prof-specialty
 41, Female,*,*, Exec-managerial
 24, Male,*,*, Farming-fishing
 24, Male,*,*, Farming-fishing
@@ -18559,7 +18443,6 @@ age,gender,race,marital_status,occupation
 68, Male,*,*, Prof-specialty
 31, Male,*,*, Sales
 48, Male,*,*, Craft-repair
-80, Male,*,*, ?
 26, Male,*,*, Machine-op-inspct
 63, Male,*,*, Transport-moving
 19, Male,*,*, Machine-op-inspct
@@ -18831,7 +18714,6 @@ age,gender,race,marital_status,occupation
 27, Female,*,*, Other-service
 22, Male,*,*, Craft-repair
 30, Male,*,*, Transport-moving
-90, Female,*,*, Exec-managerial
 39, Male,*,*, Other-service
 34, Male,*,*, Prof-specialty
 39, Male,*,*, Exec-managerial
@@ -19044,7 +18926,6 @@ age,gender,race,marital_status,occupation
 31, Male,*,*, Prof-specialty
 30, Male,*,*, Craft-repair
 23, Female,*,*, Prof-specialty
-81, Female,*,*, Other-service
 39, Male,*,*, Tech-support
 38, Female,*,*, Machine-op-inspct
 21, Female,*,*, Exec-managerial
@@ -19171,7 +19052,6 @@ age,gender,race,marital_status,occupation
 36, Male,*,*, Transport-moving
 52, Female,*,*, Prof-specialty
 28, Male,*,*, Adm-clerical
-83, Male,*,*, Sales
 17, Male,*,*, Other-service
 27, Male,*,*, Craft-repair
 35, Male,*,*, Farming-fishing
@@ -19179,7 +19059,6 @@ age,gender,race,marital_status,occupation
 23, Female,*,*, Sales
 51, Male,*,*, Handlers-cleaners
 51, Male,*,*, Other-service
-82, Male,*,*, ?
 28, Female,*,*, Exec-managerial
 53, Male,*,*, Other-service
 29, Female,*,*, Adm-clerical
@@ -19211,7 +19090,6 @@ age,gender,race,marital_status,occupation
 21, Female,*,*, Prof-specialty
 18, Female,*,*, Other-service
 17, Male,*,*, Other-service
-90, Female,*,*, Sales
 23, Male,*,*, Craft-repair
 41, Male,*,*, Prof-specialty
 19, Male,*,*, Farming-fishing
@@ -19494,7 +19372,6 @@ age,gender,race,marital_status,occupation
 76, Male,*,*, ?
 23, Female,*,*, Adm-clerical
 44, Female,*,*, Adm-clerical
-81, Female,*,*, Exec-managerial
 17, Female,*,*, Other-service
 56, Male,*,*, Tech-support
 58, Male,*,*, Craft-repair
@@ -19514,7 +19391,6 @@ age,gender,race,marital_status,occupation
 45, Female,*,*, Other-service
 50, Male,*,*, Craft-repair
 22, Male,*,*, Craft-repair
-80, Female,*,*, Other-service
 30, Male,*,*, Handlers-cleaners
 20, Female,*,*, Sales
 29, Male,*,*, Sales
@@ -19688,7 +19564,6 @@ age,gender,race,marital_status,occupation
 27, Male,*,*, Other-service
 50, Female,*,*, Adm-clerical
 56, Male,*,*, Transport-moving
-80, Male,*,*, Farming-fishing
 38, Female,*,*, Farming-fishing
 52, Male,*,*, Protective-serv
 26, Male,*,*, Prof-specialty
@@ -19827,7 +19702,6 @@ age,gender,race,marital_status,occupation
 54, Female,*,*, Adm-clerical
 21, Female,*,*, Other-service
 23, Female,*,*, Adm-clerical
-79, Female,*,*, Priv-house-serv
 55, Male,*,*, Exec-managerial
 42, Male,*,*, ?
 60, Female,*,*, Tech-support
@@ -19869,7 +19743,6 @@ age,gender,race,marital_status,occupation
 32, Male,*,*, Craft-repair
 57, Female,*,*, Other-service
 32, Female,*,*, Sales
-77, Female,*,*, Priv-house-serv
 37, Male,*,*, Craft-repair
 51, Female,*,*, Adm-clerical
 33, Male,*,*, Sales
@@ -20248,7 +20121,6 @@ age,gender,race,marital_status,occupation
 55, Male,*,*, Craft-repair
 39, Female,*,*, Prof-specialty
 41, Female,*,*, Transport-moving
-80, Male,*,*, Craft-repair
 59, Male,*,*, Farming-fishing
 52, Male,*,*, Craft-repair
 39, Male,*,*, Exec-managerial
@@ -20420,7 +20292,6 @@ age,gender,race,marital_status,occupation
 28, Male,*,*, Handlers-cleaners
 65, Male,*,*, Handlers-cleaners
 35, Male,*,*, Craft-repair
-82, Male,*,*, Other-service
 48, Male,*,*, Transport-moving
 44, Male,*,*, Exec-managerial
 68, Female,*,*, Adm-clerical
@@ -20462,7 +20333,6 @@ age,gender,race,marital_status,occupation
 33, Male,*,*, Other-service
 71, Female,*,*, Exec-managerial
 55, Female,*,*, Exec-managerial
-85, Female,*,*, Sales
 57, Male,*,*, Prof-specialty
 39, Male,*,*, Prof-specialty
 25, Male,*,*, Craft-repair
@@ -20481,8 +20351,6 @@ age,gender,race,marital_status,occupation
 64, Male,*,*, Farming-fishing
 55, Male,*,*, ?
 26, Male,*,*, Craft-repair
-80, Female,*,*, Adm-clerical
-79, Female,*,*, Prof-specialty
 58, Male,*,*, Exec-managerial
 43, Male,*,*, Tech-support
 43, Male,*,*, Craft-repair
@@ -20609,7 +20477,6 @@ age,gender,race,marital_status,occupation
 31, Male,*,*, Craft-repair
 72, Female,*,*, ?
 31, Male,*,*, Transport-moving
-90, Female,*,*, Prof-specialty
 27, Female,*,*, Prof-specialty
 18, Male,*,*, ?
 30, Male,*,*, Craft-repair
@@ -20663,7 +20530,6 @@ age,gender,race,marital_status,occupation
 58, Male,*,*, Exec-managerial
 62, Male,*,*, Prof-specialty
 31, Male,*,*, Prof-specialty
-77, Female,*,*, ?
 25, Male,*,*, Machine-op-inspct
 38, Male,*,*, Adm-clerical
 33, Female,*,*, Exec-managerial
@@ -20825,7 +20691,6 @@ age,gender,race,marital_status,occupation
 34, Male,*,*, Adm-clerical
 23, Male,*,*, Craft-repair
 27, Male,*,*, ?
-81, Male,*,*, ?
 47, Female,*,*, Machine-op-inspct
 57, Male,*,*, Craft-repair
 65, Female,*,*, ?
@@ -20848,7 +20713,6 @@ age,gender,race,marital_status,occupation
 30, Female,*,*, Tech-support
 30, Female,*,*, Adm-clerical
 50, Male,*,*, Sales
-76, Female,*,*, Priv-house-serv
 46, Male,*,*, Sales
 24, Male,*,*, Handlers-cleaners
 26, Male,*,*, Sales
@@ -20879,7 +20743,6 @@ age,gender,race,marital_status,occupation
 48, Female,*,*, ?
 61, Female,*,*, Exec-managerial
 53, Male,*,*, Adm-clerical
-79, Male,*,*, ?
 44, Male,*,*, Craft-repair
 54, Male,*,*, Exec-managerial
 22, Female,*,*, Prof-specialty
@@ -20908,7 +20771,6 @@ age,gender,race,marital_status,occupation
 59, Male,*,*, Adm-clerical
 44, Male,*,*, Craft-repair
 55, Male,*,*, Tech-support
-77, Female,*,*, Adm-clerical
 42, Male,*,*, Exec-managerial
 47, Male,*,*, Craft-repair
 42, Male,*,*, Machine-op-inspct
@@ -20952,7 +20814,6 @@ age,gender,race,marital_status,occupation
 38, Female,*,*, Craft-repair
 57, Male,*,*, Machine-op-inspct
 22, Female,*,*, Adm-clerical
-80, Male,*,*, ?
 20, Female,*,*, Adm-clerical
 40, Male,*,*, Machine-op-inspct
 36, Male,*,*, Farming-fishing
@@ -21342,7 +21203,6 @@ age,gender,race,marital_status,occupation
 59, Male,*,*, Transport-moving
 65, Male,*,*, Exec-managerial
 28, Male,*,*, Prof-specialty
-79, Male,*,*, Sales
 43, Female,*,*, Prof-specialty
 54, Male,*,*, Machine-op-inspct
 27, Male,*,*, Handlers-cleaners
@@ -21490,7 +21350,6 @@ age,gender,race,marital_status,occupation
 20, Female,*,*, Tech-support
 58, Female,*,*, Prof-specialty
 19, Male,*,*, Exec-managerial
-75, Female,*,*, ?
 24, Female,*,*, Prof-specialty
 31, Male,*,*, Machine-op-inspct
 28, Male,*,*, Craft-repair
@@ -21500,7 +21359,6 @@ age,gender,race,marital_status,occupation
 33, Male,*,*, Craft-repair
 34, Male,*,*, Other-service
 47, Male,*,*, Prof-specialty
-81, Male,*,*, Exec-managerial
 45, Male,*,*, Machine-op-inspct
 35, Male,*,*, Machine-op-inspct
 59, Female,*,*, Prof-specialty
@@ -21515,7 +21373,6 @@ age,gender,race,marital_status,occupation
 34, Male,*,*, Craft-repair
 40, Male,*,*, Exec-managerial
 33, Female,*,*, Adm-clerical
-78, Male,*,*, ?
 31, Male,*,*, Tech-support
 61, Male,*,*, Other-service
 22, Male,*,*, Craft-repair
@@ -21811,7 +21668,6 @@ age,gender,race,marital_status,occupation
 41, Male,*,*, Craft-repair
 21, Male,*,*, Protective-serv
 39, Male,*,*, Machine-op-inspct
-82, Female,*,*, ?
 18, Male,*,*, Sales
 60, Male,*,*, Protective-serv
 22, Male,*,*, Handlers-cleaners
@@ -21834,7 +21690,6 @@ age,gender,race,marital_status,occupation
 36, Male,*,*, Prof-specialty
 46, Male,*,*, Craft-repair
 55, Male,*,*, Farming-fishing
-88, Male,*,*, Exec-managerial
 60, Male,*,*, Exec-managerial
 40, Female,*,*, Exec-managerial
 21, Female,*,*, Sales
@@ -22480,7 +22335,6 @@ age,gender,race,marital_status,occupation
 40, Male,*,*, Machine-op-inspct
 17, Female,*,*, Sales
 17, Male,*,*, Craft-repair
-82, Male,*,*, Sales
 40, Female,*,*, Prof-specialty
 26, Male,*,*, Sales
 37, Male,*,*, Transport-moving
@@ -22894,10 +22748,8 @@ age,gender,race,marital_status,occupation
 24, Male,*,*, Exec-managerial
 26, Female,*,*, Exec-managerial
 45, Female,*,*, Tech-support
-88, Female,*,*, Adm-clerical
 19, Female,*,*, Adm-clerical
 24, Male,*,*, Exec-managerial
-84, Male,*,*, ?
 48, Male,*,*, Farming-fishing
 46, Male,*,*, Craft-repair
 31, Male,*,*, Craft-repair
@@ -22929,7 +22781,6 @@ age,gender,race,marital_status,occupation
 25, Female,*,*, Tech-support
 17, Female,*,*, ?
 37, Female,*,*, Tech-support
-74, Female,*,*, Farming-fishing
 26, Male,*,*, Exec-managerial
 23, Male,*,*, Other-service
 57, Male,*,*, Prof-specialty
@@ -23087,7 +22938,6 @@ age,gender,race,marital_status,occupation
 27, Female,*,*, Exec-managerial
 40, Female,*,*, Prof-specialty
 53, Female,*,*, Prof-specialty
-75, Female,*,*, Exec-managerial
 39, Male,*,*, Prof-specialty
 46, Female,*,*, Adm-clerical
 51, Female,*,*, Machine-op-inspct
@@ -23370,7 +23220,6 @@ age,gender,race,marital_status,occupation
 52, Male,*,*, Prof-specialty
 28, Male,*,*, Prof-specialty
 31, Male,*,*, Exec-managerial
-77, Female,*,*, Prof-specialty
 22, Male,*,*, Tech-support
 17, Female,*,*, ?
 38, Male,*,*, Exec-managerial
@@ -23458,7 +23307,6 @@ age,gender,race,marital_status,occupation
 24, Female,*,*, Adm-clerical
 28, Female,*,*, Prof-specialty
 24, Female,*,*, Adm-clerical
-83, Male,*,*, Farming-fishing
 69, Male,*,*, Prof-specialty
 37, Female,*,*, Adm-clerical
 28, Female,*,*, Exec-managerial
@@ -23899,7 +23747,6 @@ age,gender,race,marital_status,occupation
 50, Male,*,*, Craft-repair
 57, Male,*,*, Adm-clerical
 47, Female,*,*, Other-service
-79, Male,*,*, Farming-fishing
 40, Female,*,*, Priv-house-serv
 35, Male,*,*, Prof-specialty
 35, Male,*,*, Exec-managerial
@@ -23947,7 +23794,6 @@ age,gender,race,marital_status,occupation
 21, Female,*,*, Other-service
 20, Male,*,*, Farming-fishing
 19, Female,*,*, Sales
-77, Female,*,*, Adm-clerical
 32, Male,*,*, Tech-support
 37, Male,*,*, Transport-moving
 29, Male,*,*, Transport-moving
@@ -24026,7 +23872,6 @@ age,gender,race,marital_status,occupation
 34, Female,*,*, Adm-clerical
 40, Male,*,*, Exec-managerial
 49, Male,*,*, Craft-repair
-86, Female,*,*, Adm-clerical
 49, Female,*,*, Prof-specialty
 43, Male,*,*, Handlers-cleaners
 47, Female,*,*, Exec-managerial
@@ -24171,7 +24016,6 @@ age,gender,race,marital_status,occupation
 58, Female,*,*, Prof-specialty
 41, Male,*,*, Adm-clerical
 50, Male,*,*, Tech-support
-77, Female,*,*, Adm-clerical
 27, Male,*,*, Other-service
 29, Male,*,*, Craft-repair
 54, Male,*,*, Craft-repair
@@ -24210,7 +24054,6 @@ age,gender,race,marital_status,occupation
 19, Female,*,*, Other-service
 60, Male,*,*, Exec-managerial
 51, Male,*,*, Machine-op-inspct
-75, Female,*,*, Prof-specialty
 37, Female,*,*, Prof-specialty
 24, Male,*,*, Adm-clerical
 20, Male,*,*, Other-service
@@ -24237,7 +24080,6 @@ age,gender,race,marital_status,occupation
 33, Male,*,*, Other-service
 37, Male,*,*, Tech-support
 19, Female,*,*, Adm-clerical
-90, Female,*,*, ?
 35, Male,*,*, Farming-fishing
 62, Female,*,*, Tech-support
 20, Female,*,*, ?
@@ -24279,7 +24121,6 @@ age,gender,race,marital_status,occupation
 33, Male,*,*, Machine-op-inspct
 33, Female,*,*, Other-service
 59, Male,*,*, Exec-managerial
-82, Male,*,*, Farming-fishing
 34, Female,*,*, Prof-specialty
 29, Male,*,*, Exec-managerial
 19, Female,*,*, Other-service
@@ -24394,7 +24235,6 @@ age,gender,race,marital_status,occupation
 32, Male,*,*, Other-service
 23, Female,*,*, Prof-specialty
 28, Male,*,*, Prof-specialty
-83, Male,*,*, Exec-managerial
 25, Female,*,*, Adm-clerical
 42, Male,*,*, Exec-managerial
 46, Male,*,*, Other-service
@@ -24404,7 +24244,6 @@ age,gender,race,marital_status,occupation
 30, Female,*,*, Protective-serv
 24, Female,*,*, Sales
 17, Female,*,*, Other-service
-76, Female,*,*, ?
 31, Female,*,*, Tech-support
 52, Male,*,*, Craft-repair
 39, Female,*,*, Exec-managerial
@@ -24559,7 +24398,6 @@ age,gender,race,marital_status,occupation
 53, Female,*,*, Adm-clerical
 42, Male,*,*, Craft-repair
 18, Female,*,*, Other-service
-81, Male,*,*, Sales
 40, Male,*,*, Prof-specialty
 26, Female,*,*, Tech-support
 20, Female,*,*, Tech-support
@@ -25077,7 +24915,6 @@ age,gender,race,marital_status,occupation
 33, Female,*,*, Tech-support
 19, Male,*,*, ?
 28, Male,*,*, Adm-clerical
-74, Female,*,*, Other-service
 40, Male,*,*, Adm-clerical
 35, Male,*,*, Sales
 35, Male,*,*, Craft-repair
@@ -25162,7 +24999,6 @@ age,gender,race,marital_status,occupation
 38, Male,*,*, Sales
 75, Male,*,*, Sales
 17, Male,*,*, Other-service
-79, Male,*,*, ?
 20, Male,*,*, Sales
 25, Male,*,*, Tech-support
 27, Male,*,*, Sales
@@ -25269,7 +25105,6 @@ age,gender,race,marital_status,occupation
 26, Male,*,*, Craft-repair
 22, Male,*,*, Handlers-cleaners
 36, Male,*,*, Craft-repair
-78, Female,*,*, ?
 36, Male,*,*, Prof-specialty
 43, Female,*,*, Prof-specialty
 60, Male,*,*, Handlers-cleaners
@@ -25302,7 +25137,6 @@ age,gender,race,marital_status,occupation
 57, Male,*,*, Handlers-cleaners
 26, Male,*,*, Exec-managerial
 53, Male,*,*, Craft-repair
-90, Female,*,*, ?
 39, Male,*,*, Exec-managerial
 51, Female,*,*, Adm-clerical
 56, Male,*,*, Exec-managerial
@@ -25379,7 +25213,6 @@ age,gender,race,marital_status,occupation
 40, Male,*,*, Other-service
 59, Male,*,*, Exec-managerial
 45, Male,*,*, Exec-managerial
-76, Female,*,*, Other-service
 45, Male,*,*, Machine-op-inspct
 49, Female,*,*, Prof-specialty
 36, Female,*,*, Protective-serv
@@ -25396,7 +25229,6 @@ age,gender,race,marital_status,occupation
 36, Male,*,*, Tech-support
 66, Male,*,*, Exec-managerial
 34, Male,*,*, Craft-repair
-80, Male,*,*, ?
 21, Female,*,*, Other-service
 40, Male,*,*, Exec-managerial
 49, Female,*,*, Adm-clerical
@@ -25845,7 +25677,6 @@ age,gender,race,marital_status,occupation
 30, Male,*,*, Handlers-cleaners
 29, Male,*,*, Machine-op-inspct
 29, Male,*,*, Protective-serv
-75, Female,*,*, ?
 58, Male,*,*, Exec-managerial
 42, Female,*,*, Other-service
 62, Male,*,*, Protective-serv
@@ -25911,7 +25742,6 @@ age,gender,race,marital_status,occupation
 30, Male,*,*, Exec-managerial
 66, Male,*,*, Exec-managerial
 37, Male,*,*, Sales
-74, Female,*,*, Handlers-cleaners
 46, Male,*,*, Protective-serv
 51, Male,*,*, Exec-managerial
 33, Male,*,*, Exec-managerial
@@ -26011,7 +25841,6 @@ age,gender,race,marital_status,occupation
 19, Male,*,*, Sales
 68, Male,*,*, Exec-managerial
 28, Male,*,*, Prof-specialty
-81, Female,*,*, ?
 22, Male,*,*, Farming-fishing
 58, Female,*,*, Adm-clerical
 31, Female,*,*, Machine-op-inspct
@@ -26241,7 +26070,6 @@ age,gender,race,marital_status,occupation
 27, Male,*,*, Protective-serv
 46, Male,*,*, Transport-moving
 42, Male,*,*, Other-service
-79, Male,*,*, Sales
 50, Female,*,*, Exec-managerial
 19, Female,*,*, ?
 43, Male,*,*, Adm-clerical
@@ -26502,7 +26330,6 @@ age,gender,race,marital_status,occupation
 53, Female,*,*, Prof-specialty
 52, Male,*,*, Machine-op-inspct
 52, Male,*,*, Transport-moving
-74, Female,*,*, ?
 50, Male,*,*, Adm-clerical
 29, Female,*,*, Sales
 76, Male,*,*, Protective-serv
@@ -26730,7 +26557,6 @@ age,gender,race,marital_status,occupation
 24, Male,*,*, Prof-specialty
 51, Male,*,*, Sales
 31, Male,*,*, Handlers-cleaners
-84, Female,*,*, Prof-specialty
 51, Male,*,*, Craft-repair
 24, Male,*,*, Prof-specialty
 30, Male,*,*, Machine-op-inspct
@@ -26901,7 +26727,6 @@ age,gender,race,marital_status,occupation
 38, Male,*,*, Sales
 23, Male,*,*, Handlers-cleaners
 42, Female,*,*, Exec-managerial
-78, Male,*,*, Transport-moving
 54, Male,*,*, Exec-managerial
 26, Female,*,*, Adm-clerical
 30, Male,*,*, Prof-specialty
@@ -27222,7 +27047,6 @@ age,gender,race,marital_status,occupation
 35, Male,*,*, Prof-specialty
 48, Male,*,*, Exec-managerial
 32, Male,*,*, Protective-serv
-76, Female,*,*, Prof-specialty
 57, Female,*,*, Handlers-cleaners
 58, Female,*,*, ?
 51, Male,*,*, Exec-managerial
@@ -27581,7 +27405,6 @@ age,gender,race,marital_status,occupation
 61, Female,*,*, ?
 26, Male,*,*, Sales
 47, Male,*,*, Adm-clerical
-78, Male,*,*, Craft-repair
 24, Male,*,*, Craft-repair
 27, Male,*,*, Farming-fishing
 51, Male,*,*, Exec-managerial
@@ -27794,7 +27617,6 @@ age,gender,race,marital_status,occupation
 28, Female,*,*, Sales
 50, Female,*,*, Adm-clerical
 19, Male,*,*, Craft-repair
-84, Male,*,*, Prof-specialty
 48, Male,*,*, Prof-specialty
 61, Female,*,*, Adm-clerical
 44, Male,*,*, Craft-repair
@@ -28175,7 +27997,6 @@ age,gender,race,marital_status,occupation
 49, Female,*,*, Exec-managerial
 34, Male,*,*, Craft-repair
 19, Male,*,*, ?
-79, Male,*,*, Exec-managerial
 28, Male,*,*, Other-service
 41, Male,*,*, Exec-managerial
 21, Male,*,*, Other-service
@@ -28206,7 +28027,6 @@ age,gender,race,marital_status,occupation
 41, Male,*,*, Exec-managerial
 29, Male,*,*, Craft-repair
 32, Male,*,*, ?
-78, Male,*,*, Handlers-cleaners
 64, Male,*,*, Exec-managerial
 58, Male,*,*, Exec-managerial
 55, Male,*,*, ?
@@ -28720,7 +28540,6 @@ age,gender,race,marital_status,occupation
 42, Male,*,*, Tech-support
 25, Female,*,*, Prof-specialty
 28, Male,*,*, Machine-op-inspct
-80, Male,*,*, Other-service
 36, Female,*,*, Transport-moving
 37, Male,*,*, Exec-managerial
 38, Male,*,*, Adm-clerical
@@ -28947,7 +28766,6 @@ age,gender,race,marital_status,occupation
 17, Female,*,*, Sales
 56, Male,*,*, Prof-specialty
 38, Male,*,*, Exec-managerial
-81, Male,*,*, Transport-moving
 22, Female,*,*, Machine-op-inspct
 43, Female,*,*, Adm-clerical
 31, Female,*,*, Adm-clerical
@@ -29147,7 +28965,6 @@ age,gender,race,marital_status,occupation
 38, Female,*,*, Exec-managerial
 18, Female,*,*, Sales
 50, Male,*,*, Exec-managerial
-78, Female,*,*, Sales
 27, Male,*,*, Craft-repair
 19, Female,*,*, Sales
 24, Female,*,*, Tech-support
@@ -29486,7 +29303,6 @@ age,gender,race,marital_status,occupation
 28, Male,*,*, Exec-managerial
 30, Male,*,*, Craft-repair
 33, Male,*,*, Other-service
-74, Female,*,*, Sales
 36, Male,*,*, Craft-repair
 36, Male,*,*, Tech-support
 29, Female,*,*, Adm-clerical
@@ -29593,7 +29409,6 @@ age,gender,race,marital_status,occupation
 29, Female,*,*, Prof-specialty
 38, Male,*,*, Exec-managerial
 37, Male,*,*, Exec-managerial
-81, Male,*,*, Sales
 41, Female,*,*, Exec-managerial
 29, Female,*,*, Sales
 30, Female,*,*, Adm-clerical
@@ -29723,7 +29538,6 @@ age,gender,race,marital_status,occupation
 18, Male,*,*, Other-service
 60, Male,*,*, Transport-moving
 44, Male,*,*, Exec-managerial
-81, Male,*,*, ?
 43, Female,*,*, Other-service
 35, Male,*,*, Farming-fishing
 58, Male,*,*, Farming-fishing
@@ -31431,7 +31245,6 @@ age,gender,race,marital_status,occupation
 26, Male,*,*, Craft-repair
 57, Male,*,*, Sales
 59, Male,*,*, Craft-repair
-87, Male,*,*, ?
 25, Male,*,*, Transport-moving
 39, Male,*,*, Prof-specialty
 53, Male,*,*, Prof-specialty
@@ -31624,7 +31437,6 @@ age,gender,race,marital_status,occupation
 61, Male,*,*, Sales
 45, Male,*,*, Prof-specialty
 29, Female,*,*, Adm-clerical
-74, Female,*,*, Handlers-cleaners
 61, Female,*,*, Prof-specialty
 27, Male,*,*, Sales
 53, Male,*,*, Prof-specialty
@@ -31813,7 +31625,6 @@ age,gender,race,marital_status,occupation
 26, Male,*,*, Handlers-cleaners
 47, Female,*,*, Other-service
 44, Male,*,*, Exec-managerial
-80, Male,*,*, Farming-fishing
 55, Male,*,*, Prof-specialty
 43, Male,*,*, Prof-specialty
 49, Male,*,*, Transport-moving
@@ -31835,7 +31646,6 @@ age,gender,race,marital_status,occupation
 39, Female,*,*, Adm-clerical
 44, Female,*,*, Adm-clerical
 27, Male,*,*, Tech-support
-80, Male,*,*, ?
 31, Male,*,*, Prof-specialty
 34, Male,*,*, Prof-specialty
 28, Male,*,*, Transport-moving
@@ -31854,7 +31664,6 @@ age,gender,race,marital_status,occupation
 41, Female,*,*, Sales
 28, Male,*,*, Craft-repair
 31, Female,*,*, Handlers-cleaners
-82, Male,*,*, Farming-fishing
 23, Female,*,*, Prof-specialty
 40, Male,*,*, Exec-managerial
 35, Male,*,*, Sales
@@ -32276,7 +32085,6 @@ age,gender,race,marital_status,occupation
 34, Male,*,*, Machine-op-inspct
 20, Female,*,*, ?
 29, Male,*,*, Protective-serv
-90, Female,*,*, Adm-clerical
 55, Female,*,*, Machine-op-inspct
 36, Male,*,*, Handlers-cleaners
 49, Female,*,*, Adm-clerical
@@ -32458,7 +32266,6 @@ age,gender,race,marital_status,occupation
 30, Male,*,*, Craft-repair
 33, Male,*,*, Tech-support
 36, Male,*,*, Prof-specialty
-85, Male,*,*, Exec-managerial
 62, Female,*,*, Adm-clerical
 24, Female,*,*, Machine-op-inspct
 48, Male,*,*, Craft-repair
@@ -32493,7 +32300,6 @@ age,gender,race,marital_status,occupation
 33, Female,*,*, Adm-clerical
 42, Male,*,*, Sales
 24, Female,*,*, Machine-op-inspct
-82, Male,*,*, ?
 26, Male,*,*, Craft-repair
 18, Male,*,*, Prof-specialty
 34, Female,*,*, Other-service
@@ -32524,7 +32330,6 @@ age,gender,race,marital_status,occupation
 58, Male,*,*, Sales
 30, Male,*,*, Transport-moving
 26, Female,*,*, Machine-op-inspct
-81, Female,*,*, ?
 32, Male,*,*, Transport-moving
 22, Male,*,*, Adm-clerical
 31, Female,*,*, Machine-op-inspct

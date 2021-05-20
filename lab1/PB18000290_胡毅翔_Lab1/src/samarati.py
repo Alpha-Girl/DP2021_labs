@@ -186,7 +186,7 @@ def func_vec(sum, m1, m2, m3, m4):
 k = 20
 MaxSup = 200
 # Loss_Metric,Discernability_Metric,entropy,Just_do_it
-Utility_evaluation = 'Just_do_it'
+Utility_evaluation = 'Discernability_Metric'
 print("k=", k)
 print("MaxSup=", MaxSup)
 print("Now the Utility_evaluation is", Utility_evaluation)

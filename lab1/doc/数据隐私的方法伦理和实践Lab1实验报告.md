@@ -1,10 +1,8 @@
-# 数据隐私的方法伦理和实践Lab1实验报告
-
 ## 实验目的
 
 1. 实现`Samarati`算法。
 2. 实现`Mondrian`算法。
-3. 测试不同的`k`和`MaxSup`对运行时间和LM的影响。
+3. 测试不同的`k`和`MaxSup`对运行时间和`LM`的影响。
 4. 调研并探究如何选择输出增加`Samarati`算法的可用性。
 5. 增加`Mondrian`算法处理`categorical`类变量。
 
@@ -15,6 +13,32 @@
 3. VSCode编辑器
 4. Python 3.8.1
 
+## 目录结构
+
+> doc
+>
+> > report.pdf(本文档)
+>
+> src
+>
+> >samarati.py(Samarati算法主体)
+> >
+> >mondrian.py(Mondrian算法主体)
+> >
+> >adult.data(处理的数据集)
+> >
+> >adult.csv(data.py用，增加了属性行)
+> >
+> >adult_samarati.csv(Samarati算法的输出结果)
+> >
+> >adult_mondrian.data(Mondrian算法的输出结果)
+> >
+> >data.py(预处理)
+> >
+> >其他
+>
+> README.txt
+
 ## 实验原理
 
 ### Samarati算法
@@ -22,7 +46,7 @@
 #### 输入：
 
 1. `k`：处理后的结果中每个相同的QI组合至少有k个元组。
-2. `adult.data`：待泛化的数据集
+2. `adult.csv`：待泛化的数据集
 3. `MaxSup`：可以删去的不满足k匿名的元组数。
 4. `T`：泛化的层次结构。
 5. `Utility_evaluation`：可用性评估方法。
@@ -98,37 +122,114 @@ Anonymize(Partition)
 
 #### LM(Loss Metric)
 
-LM的计算方式如下：
+`LM`的计算方式如下：
 
-- 对于数值型属性，其LM=(U{i}-L{i})/U-L。
-- 对于类别型属性，其LM=(M-1)/(A-1)，其中A为所有类别数，M为以该泛化节点为根节点的叶子节点数。
-- 每个属性的LM为其所有泛化后元素的LM的平均值。
-- 整体的LM为所有属性的LM 之和。
+- 对于数值型属性：
+  $$
+  LM=\frac{{U}_{i}-{L}_{i}}{U-L}
+  $$
 
-LM考虑了泛化层次带来的信息损失，但认为不同属性的信息量是相同的（这点可以考虑在求和时对，不同属性的LM加权来调整，默认均为1），而且没有考虑被删去的元组的损失。
+- 对于类别型属性：
+  $$
+  LM=\frac{\left\lvert M\right\rvert -1}{\left\lvert A \right\rvert -1}
+  $$
+  其中`|A|`为所有类别数，`|M|`为以该泛化节点为根节点的叶子节点数。
+
+- 每个属性的`LM`为其所有泛化后元素的`LM`的平均值。
+
+- 整体的`LM`为所有属性的`LM `之和。
+
+`LM`考虑了泛化层次带来的信息损失，但认为不同属性的信息量是相同的（这点可以考虑在求和时，对不同属性的`LM`加权来调整，默认均为1），而且没有考虑被删去的元组的损失。
 
 ####  DM(Discernability Metric)
 
-DM的计算方式如下：
+`DM`的计算方式如下：
 
-- 对于未被删除的元组，其损失为泛化后QI与其相同的元组数。
+- 对于未被删除的元组，其损失为泛化后`QI`与其相同的元组数。
+
 - 对于被删除的元组，其损失为数据集的大小。
+
 - 整体的损失为所有元组的损失之和。
 
-DM考虑了泛化带来的损失（同一等价类的元组数越多，损失越大），还考虑了被删除元组带来的损失，不过缺乏对泛化层次的影响的度量。
+  即：
+  $$
+  DM=\sum_{\forall E \text { s.t. }|E| \geq k}|E|^{2}+\sum_{\forall E \text { s.t. }|E|<k}|D||E|
+  $$
 
-#### entropy
+`DM`考虑了泛化带来的损失（同一等价类的元组数越多，损失越大），还考虑了被删除元组带来的损失，不过缺乏对泛化层次的影响的度量。
 
-entropy的计算方式如下：
+#### non-uniform entropy
 
-- 泛化后的数据集大小为`|D’|`
-- 泛化后每个等价类（QI相同的为同一等价类）的大小为`|A|`，其损失为`plog(p)`（其中`p=|A|/|D’|`）
+`non-uniform entropy`的计算方式如下：
 
-entropy参考信息熵，考虑了泛化后的数据集的信息量，信息量越大，损失越小。为了统一效用函数越小，表示效果越好，这里的熵未取负号。
+- 被泛化的数据中，同一记录值的记录集合在一个属性`V`（`n`个类别其泛化到同一个值）上的损失为：
+  $$
+  H_{V}^{r}=-\sum_{i=1}^{n} p_{i}^{\prime} \log \left(p_{i}^{\prime}\right)
+  $$
+  其中:
+  $$
+  p_{i}^{\prime}=\frac{p_{i}}{\sum_{i=1}^{n} p_{i}}
+  $$
+
+  $$
+  p_{i}=\frac{\#(V=i)}{|D|}
+  $$
+
+  `|D|`是同一记录值的集合大小，`#(V=i)`为该集合中属性`V`属于类别`i`的元素数。
+
+- 假设各个变量相互独立，则对于`m`个属性泛化后的记录，泛化后记录值同为`l`的集合的损失为各个属性上的损失之和，即：
+  $$
+  H_{l}^{r}=\sum_{j=1}^{m} H_{V_{j}}^{r}
+  $$
+  泛化数据的总损失为所有泛化记录值的损失之和，即：
+  $$
+  H_{total}^{r}=\sum_{l=1}^{L} H_{l}^{r}
+  $$
+
+- 对于被删除的数据，同一记录值的记录集合在一个属性上的损失为：
+  $$
+  H_{V}^{s}=-\sum_{i=1}^{n} p_{i}^{\prime} \log \left(p_{i}^{\prime}\right)
+  $$
+  其余定义同泛化数据，则有：
+  $$
+  H_{l}^{s}=\sum_{j=1}^{m} H_{V_{j}}^{s}
+  $$
+
+  $$
+  H_{total}^{s}=\sum_{l=1}^{L^{\prime}} H_{l}^{s}
+  $$
+
+- 对于整个数据集，总损失为泛化数据和删除数据的损失之和，即：
+  $$
+  H_{t o tal}^{r + s}=H_{t o tal}^{r}+H_{t o tal}^{s}
+  $$
+
+`non-uniform entropy`参考信息熵，考虑了泛化前后的数据集的信息量差异，差异越大说明泛化程度越大，泛化后的信息量越少。
+
+## 实验过程
+
+### Samarati
+
+1. 设置参数`k`，`MaxSup`。
+2. 设置评估策略`Utility_evaluation`，其中`Just_do_it`为寻找泛化层次最低的输出，其他则为对应效用函数下的最优结果。
+3. 执行，返回评估函数值（显示为`LM=xx`）（若使用`Just_do_it`，则效用函数固定为0），泛化层次向量，运行时间，结果保存至`adult_samarati.csv`。
+
+### Mondrian
+
+1. 设置参数`k`。
+2. 执行，返回`LM`和运行时间，结果保存至`adult_mondrian.data`。
+
+### 运行
+
+![QQ图片20210520201202](D:\USTC\DP2021_labs\lab1\doc\QQ图片20210520201202.png)
+
+### 输出结果
+
+![QQ图片20210520201342](D:\USTC\DP2021_labs\lab1\doc\QQ图片20210520201342.png)
 
 ## 实验结果
 
-### 不同k，MaxSup的情况下的Samarati（未考虑Utility）
+### Samarati（仅考虑height）
 
 |  k   | MaxSup | vec[age,gender,race,marital_status] | Time(s) |
 | :--: | :----: | :---------------------------------: | :-----: |
@@ -142,22 +243,21 @@ entropy参考信息熵，考虑了泛化后的数据集的信息量，信息量�
 |  20  |  100   |            [2, 1, 1, 0]             |  12.54  |
 |  20  |   50   |            [1, 0, 1, 2]             |  11.16  |
 
-#### 使用不同的评估方法
+### Samarati（考虑不同的评估方法）
 
-|  k   | MaxSup |        LM        |          DM          |      entropy      |
-| :--: | :----: | :--------------: | :------------------: | :---------------: |
-|  10  |  200   | 1.05[1, 0, 1, 0] | 39728101[1, 0, 1, 0] | -4.24[1, 0, 1, 0] |
-|  10  |  100   | 1.16[1, 0, 1, 1] | 14746387[0, 0, 1, 2] | -4.57[0, 0, 1, 2] |
-|  20  |  200   |  2[0, 0, 1, 2]   | 19107497[0, 0, 1, 2] | -4.55[0, 0, 1, 2] |
-|  30  |  200   | 2.05[1, 0, 1, 2] | 27583737[0, 1, 1, 2] | -3.92[0, 1, 1, 2] |
-|  20  |   50   | 2.05[1, 0, 1, 2] | 23809399[0, 1, 1, 2] | -3.93[0, 1, 1, 2] |
+|  k   | MaxSup |        LM        |          DM          | non-uniform entropy |
+| :--: | :----: | :--------------: | :------------------: | :-----------------: |
+|  10  |  200   | 1.05[1, 0, 1, 0] | 39728101[1, 0, 1, 0] |  91.69[1, 0, 1, 2]  |
+|  10  |  100   | 1.16[1, 0, 1, 1] | 14746387[0, 0, 1, 2] |  91.69[1, 0, 1, 2]  |
+|  20  |  200   |  2[0, 0, 1, 2]   | 19107497[0, 0, 1, 2] |  91.69[1, 0, 1, 2]  |
+|  30  |  200   | 2.05[1, 0, 1, 2] | 27583737[0, 1, 1, 2] |  91.69[1, 0, 1, 2]  |
+|  20  |   50   | 2.05[1, 0, 1, 2] | 23809399[0, 1, 1, 2] |  91.69[1, 0, 1, 2]  |
 
 由表中数据可以看出：
 
 1. 在相同的`k`和`MaxSup`下，不同评价指标的输出结果（泛化层次向量）并不相同，比如`k=10`，`MaxSup=100`时。
 2. 在不同评价指标下，效用最高时的`k`和`MaxSup`也不相同。
-3. `DM`和`entropy`的结果较为接近。
-4. `LM`在`k=30`，`MaxSup=200`和`k=20`，`MaxSup=50`时的效用值一样，但`k=20`，`MaxSup=50`的所含的信息量较大，而`LM`却无法体现。
+3. `non-uniform entropy`的计算过程仅考虑了数据出现的概率，而未考虑实际数据大小，分布对指标的影响，不是良好的评价指标。
 
 ### Mondrian
 
@@ -175,3 +275,26 @@ entropy参考信息熵，考虑了泛化后的数据集的信息量，信息量�
 1. `Mondrian`算法的`LM`随`k`的增大逐渐减小，表明泛化程度越大，可用性越差，与理论相符。
 2. `Mondrian`算法的运行时间随`k`的增大而减小，符合实验预期。
 
+## 讨论与总结
+
+本次实验完成了k匿名的两种算法——`Samarati`和`Mondrian`。算法均按照讲义中的伪代码进行实现。
+
+在探究`Samarati`不同输出的可用性时，还实现了`LM`，`DM`和`non-uniform entropy`。比较不同的评估方法，可以看出`LM`和`DM`的评估方法，可以较好地表现出数据可用性。此外，若要进一步改进评价指标，可以考虑给不同维度增加权重，因为在实际应用中，不同属性的价值有所不同。
+
+在`Mondrian`算法中，进一步实现了对类别型数据的处理。具体实现方法为，先把类别型数据转为数据型。在执行完`Mondrian`算法后，再将转化的数据型数据还原为类别型数据。
+
+在执行时间上，`Samarati`算法的耗时较长，可能由于需要考虑同一泛化高度的所有可能情况带来的开销。`Mondrian`算法在`k`值成倍增加时，执行时间并没有成倍减少，可能是数据读写等带来的影响，也可能算法的复杂度与`k`并不是反比关系。
+
+## 参考文献
+
+- El Emam K, Dankar FK, Issa R, et al. A globally optimal k-anonymity method for the de-identification of health data. *J Am Med Inform Assoc*. 2009;16(5):670-682. doi:10.1197/jamia.M3144
+
+- Bayardo R, Agrawal R. Data privacy through optimal k-anonymization 2005. Proceedings of the 21st International Conference on Data Engineering.
+
+- Samarati P. Protecting respondents identities in microdata release[J]. IEEE transactions on Knowledge and Data Engineering, 2001. 
+
+- LeFevre K, DeWitt D J, Ramakrishnan R. Mondrian multidimensional k-anonymity[C].(ICDE'06). IEEE, 2006. 
+
+- V. S. Iyengar , “Transforming data to satisfy privacy constraints,” in ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2002.
+
+- de Waal T, Willenborg L. Information loss through global recoding and local suppression *Neth Off Statistics* 1999;14:17-20. 

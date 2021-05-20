@@ -1,0 +1,6 @@
+child,parent
+ Other,*
+ Amer-Indian-Eskimo,*
+ Black,*
+ White,*
+ Asian-Pac-Islander,*
