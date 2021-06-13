@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.2.3)  6 JUN 2021 10:33
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.2.3)  13 JUN 2021 22:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -651,7 +651,8 @@ Package fontspec Info: Font family 'CourierNew(0)' created for font 'Courier
 Package: xeCJK-listings 2020/02/18 v3.8.2 xeCJK patch file for listings
 \l__xeCJK_listings_max_char_int=\count312
 \l__xeCJK_listings_flag_int=\count313
-) (./hw2.aux)
+)
+No file hw2.aux.
 \openout1 = `hw2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -674,7 +675,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
-
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 26.
 
@@ -785,10 +785,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
-
-(./hw2.out) (./hw2.out)
 \@outlinefile=\write3
 \openout3 = `hw2.out'.
+
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 
 Package fontspec Info: Could not resolve font "华光黑体_CNKI/BI" (it probably
@@ -815,10 +817,11 @@ Package fontspec Info: Font family '华光黑体_CNKI(0)' created for font '华�
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
 
- (d:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+(d:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+
 
 (d:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -839,24 +842,34 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hei' on input line 42.
 
-[2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
+[2] [3] [4] [5] [6] [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
  (./hw2.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 121.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
-Package rerunfilecheck Info: File `hw2.out' has not changed.
-(rerunfilecheck)             Checksum: 80B55E30A27C812A2975E02FD3234F18;517.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 221.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
+
+
+Package rerunfilecheck Warning: File `hw2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `hw2.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  AD517EF80F51ED3494A944DD9FB7321C;940.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
  ) 
 Here is how much of TeX's memory you used:
- 18391 strings out of 479418
- 370511 string characters out of 5888106
- 668335 words of memory out of 5000000
- 35561 multiletter control sequences out of 15000+600000
+ 18382 strings out of 479418
+ 370439 string characters out of 5888106
+ 670185 words of memory out of 5000000
+ 35558 multiletter control sequences out of 15000+600000
  553590 words of font info for 149 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 56i,13n,68p,532b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,14n,68p,540b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on hw2.pdf (4 pages).
+Output written on hw2.pdf (8 pages).
