@@ -4,7 +4,7 @@ import random
 import sys
 from random import randint
 from gmpy2 import mpz, powmod, invert, is_prime, random_state, mpz_urandomb, rint_round, log2, gcd
-
+import time
 rand = random_state(random.randrange(sys.maxsize))
 
 
@@ -63,24 +63,141 @@ def enc_add(pub, m1, m2):  # to do
 
 
 def enc_add_const(pub, m, c):  # to do
-    return (enc(pub, m)*pub.g**c) % pub.n_sq
+    return (enc(pub, m)*powmod(pub.g, c, pub.n_sq)) % pub.n_sq
     """Add constant n to an encrypted integer"""
 
 
 def enc_mul_const(pub, m, c):  # to do
-    return (enc(pub, m)**c) % pub.n_sq
+    return powmod(enc(pub, m), c, pub.n_sq)  # (enc(pub, m)**c) % pub.n_sq
     """Multiplies an encrypted integer by a constant"""
 
 
 if __name__ == '__main__':
     priv, pub = generate_keypair(1024)
-    print("dec(priv,pub,enc_add(pub, 2021, 2000))=",
+
+    print("****************test dec(),enc()****************")
+    print("dec(priv, pub, enc(pub, 18000290)) =",
+          dec(priv, pub, enc(pub, 18000290)))
+
+    print("****************test enc_add()****************")
+    print("dec(priv, pub, enc_add(pub, 2021, 2000)) =",
           dec(priv, pub, enc_add(pub, 2021, 2000)))
-    print("dec(priv,pub,enc_add_const(pub, 2021,4))=",
+
+    print("****************test enc_add_const()****************")
+    print("dec(priv, pub, enc_add_const(pub, 2021, 4)) =",
           dec(priv, pub, enc_add_const(pub, 2021, 4)))
-    print("dec(priv,pub,enc_mul_const(pub, 2021, 4))=",
+
+    print("****************test enc_mul_const()****************")
+    print("dec(priv, pub, enc_mul_const(pub, 2021, 4)) =",
           dec(priv, pub, enc_mul_const(pub, 2021, 4)))
 
-    """
-    test
-    """
+    print("****************test 10bits enc_add()****************")
+    a = [0 for i in range(1000)]
+    b = [0 for i in range(1000)]
+    c = [0 for i in range(1000)]
+    d = [0 for i in range(1000)]
+    for i in range(1000):
+        a[i] = random.getrandbits(10)
+        b[i] = random.getrandbits(10)
+        c[i] = a[i]+b[i]
+    start_time = time.time()
+    for i in range(1000):
+        d[i] = dec(priv, pub, enc_add(pub, a[i], b[i]))
+    end_time = time.time()
+    for i in range(1000):
+        if d[i] != c[i]:
+            print("Error!!!")
+    print("10bits for 1000 times!!!\nRunning time %0.2f" %
+          (end_time - start_time) + " seconds")
+    print("****************test 100bits enc_add()****************")
+    a = [0 for i in range(1000)]
+    b = [0 for i in range(1000)]
+    c = [0 for i in range(1000)]
+    d = [0 for i in range(1000)]
+    for i in range(1000):
+        a[i] = random.getrandbits(100)
+        b[i] = random.getrandbits(100)
+        c[i] = a[i]+b[i]
+    start_time = time.time()
+    for i in range(1000):
+        d[i] = dec(priv, pub, enc_add(pub, a[i], b[i]))
+    end_time = time.time()
+    for i in range(1000):
+        if d[i] != c[i]:
+            print("Error!!!")
+    print("100bits for 1000 times!!!\nRunning time %0.2f" %
+          (end_time - start_time) + " seconds")
+    print("****************test 1000bits enc_add()****************")
+    a = [0 for i in range(1000)]
+    b = [0 for i in range(1000)]
+    c = [0 for i in range(1000)]
+    d = [0 for i in range(1000)]
+    for i in range(1000):
+        a[i] = random.getrandbits(1000)
+        b[i] = random.getrandbits(1000)
+        c[i] = a[i]+b[i]
+    start_time = time.time()
+    for i in range(1000):
+        d[i] = dec(priv, pub, enc_add(pub, a[i], b[i]))
+    end_time = time.time()
+    for i in range(1000):
+        if d[i] != c[i]:
+            print("Error!!!")
+    print("1000bits for 1000 times!!!\nRunning time %0.2f" %
+          (end_time - start_time) + " seconds")
+
+    print("****************test 10bits enc_add_const()****************")
+    a = [0 for i in range(1000)]
+    b = [0 for i in range(1000)]
+    c = [0 for i in range(1000)]
+    d = [0 for i in range(1000)]
+    for i in range(1000):
+        a[i] = random.getrandbits(10)
+        b[i] = random.getrandbits(10)
+        c[i] = a[i]+b[i]
+    start_time = time.time()
+    for i in range(1000):
+        d[i] = dec(priv, pub, enc_add_const(pub, a[i], b[i]))
+    end_time = time.time()
+    for i in range(1000):
+        if d[i] != c[i]:
+            print("Error!!!")
+    print("10bits for 1000 times!!!\nRunning time %0.2f" %
+          (end_time - start_time) + " seconds")
+    print("****************test 100bits enc_add_const()****************")
+    a = [0 for i in range(1000)]
+    b = [0 for i in range(1000)]
+    c = [0 for i in range(1000)]
+    d = [0 for i in range(1000)]
+    for i in range(1000):
+        a[i] = random.getrandbits(100)
+        b[i] = random.getrandbits(100)
+        c[i] = a[i]+b[i]
+    start_time = time.time()
+    for i in range(1000):
+        d[i] = dec(priv, pub, enc_add_const(pub, a[i], b[i]))
+    end_time = time.time()
+    for i in range(1000):
+        if d[i] != c[i]:
+            print("Error!!!")
+    print("100bits for 1000 times!!!\nRunning time %0.2f" %
+          (end_time - start_time) + " seconds")
+    print("****************test 1000bits enc_add_const()****************")
+    a = [0 for i in range(1000)]
+    b = [0 for i in range(1000)]
+    c = [0 for i in range(1000)]
+    d = [0 for i in range(1000)]
+    for i in range(1000):
+        a[i] = random.getrandbits(1000)
+        b[i] = random.getrandbits(1000)
+        c[i] = a[i]+b[i]
+    start_time = time.time()
+    for i in range(1000):
+        d[i] = dec(priv, pub, enc_add_const(pub, a[i], b[i]))
+    end_time = time.time()
+    for i in range(1000):
+        if d[i] != c[i]:
+            print("Error!!!")
+    print("1000bits for 1000 times!!!\nRunning time %0.2f" %
+          (end_time - start_time) + " seconds")
+

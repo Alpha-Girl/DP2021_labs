@@ -6,7 +6,7 @@ import argparse
 def args_parser():
     parser = argparse.ArgumentParser()
     # experiment arguments
-    parser.add_argument('--mode', type=str, default='plain', help="plain, DP, or Paillier")
+    parser.add_argument('--mode', type=str, default='Paillier', help="plain, DP, or Paillier")
 
     # federated arguments
     parser.add_argument('--epochs', type=int, default=6, help="rounds of training")
